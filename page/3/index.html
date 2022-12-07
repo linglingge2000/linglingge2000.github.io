@@ -164,6 +164,529 @@
     
     
     <article
+  id="post-Ubuntu/20221120-Win10+Ubuntu双系统安装配置教程（六）——换源"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/10/29/Ubuntu/20221120-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%85%AD%EF%BC%89%E2%80%94%E2%80%94%E6%8D%A2%E6%BA%90/"
+    >Win10+Ubuntu双系统安装配置教程（六）——换源</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2022/10/29/Ubuntu/20221120-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%85%AD%EF%BC%89%E2%80%94%E2%80%94%E6%8D%A2%E6%BA%90/" class="article-date">
+  <time datetime="2022-10-28T16:00:00.000Z" itemprop="datePublished">2022-10-29</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Ubuntu%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/">Ubuntu系统安装及配置</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h3 id="您当前所在的页面是Win10-Ubuntu双系统安装配置教程（六）——换源，点击下方超链接实现自动跳转！"><a href="#您当前所在的页面是Win10-Ubuntu双系统安装配置教程（六）——换源，点击下方超链接实现自动跳转！" class="headerlink" title="您当前所在的页面是Win10+Ubuntu双系统安装配置教程（六）——换源，点击下方超链接实现自动跳转！"></a>您当前所在的页面是Win10+Ubuntu双系统安装配置教程（六）——换源，点击下方超链接实现自动跳转！</h3><p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/24/Ubuntu/20221115-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9CUbuntu%E5%90%AF%E5%8A%A8%E7%9B%98/">Win10+Ubuntu双系统安装配置教程（一）——制作Ubuntu启动盘</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/25/Ubuntu/20221116-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/">Win10+Ubuntu双系统安装配置教程（二）——磁盘分区</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/26/Ubuntu/20221117-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%89%EF%BC%89%E2%80%94%E2%80%94%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/">Win10+Ubuntu双系统安装配置教程（三）——准备工作</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/27/Ubuntu/20221117-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%9B%9B%EF%BC%89%E2%80%94%E2%80%94ubuntu%E5%AE%89%E8%A3%85/">Win10+Ubuntu双系统安装配置教程（四）——ubuntu安装</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/28/Ubuntu/20221119-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%94%EF%BC%89%E2%80%94%E2%80%94root%E5%88%9D%E5%A7%8B%E5%8C%96/"> Win10+Ubuntu双系统安装配置教程（五）——	root初始化</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/29/Ubuntu/20221120-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%85%AD%EF%BC%89%E2%80%94%E2%80%94%E6%8D%A2%E6%BA%90/">Win10+Ubuntu双系统安装配置教程（六）——换源</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/30/Ubuntu/20221120-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%83%EF%BC%89%E2%80%94%E2%80%94%E5%AE%89%E8%A3%85%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95/">Win10+Ubuntu双系统安装配置教程（七）——安装搜狗输入法</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/31/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%85%AB%EF%BC%89%E2%80%94%E2%80%94%E5%AE%89%E8%A3%85nvidia%E9%A9%B1%E5%8A%A8/">Win10+Ubuntu双系统安装配置教程（八）——安装nvidia驱动</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/11/01/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B9%9D%EF%BC%89%E2%80%94%E2%80%94%E5%AE%89%E8%A3%85Anaconda%E5%B9%B6%E6%8D%A2%E6%BA%90/">Win10+Ubuntu双系统安装配置教程（九）——安装Anaconda并换源</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/11/02/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%8D%81%EF%BC%89%E2%80%94%E2%80%94%E5%9C%A8%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E4%B8%AD%E5%AE%89%E8%A3%85Tensorflow+keras%E6%A1%86%E6%9E%B6/">Win10+Ubuntu双系统安装配置教程（十）——创建虚拟环境并安装Tensorflow+keras框架</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/11/03/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%8D%81%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94%E5%9C%A8%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E4%B8%AD%E5%AE%89%E8%A3%85pytorch%E6%A1%86%E6%9E%B6/">Win10+Ubuntu双系统安装配置教程（十一）——在虚拟环境中安装pytorch框架</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/11/04/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%8D%81%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E5%AE%8C%E5%85%A8%E5%8D%B8%E8%BD%BDubuntu/">Win10+Ubuntu双系统安装配置教程（十二）——完全卸载ubuntu</a></p>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="六、换源"><a href="#六、换源" class="headerlink" title="六、换源"></a>六、换源</h1><p>[TOC]</p>
+<p>提示：ctrl+shift+c 复制终端文本，ctrl+shift+v 粘贴文本到终端</p>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="点击左下角九个点，点击终端，输入"><a href="#点击左下角九个点，点击终端，输入" class="headerlink" title="点击左下角九个点，点击终端，输入"></a>点击左下角九个点，点击终端，输入</h3><figure class="highlight pascal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo cp  /etc/apt/sources.list  /etc/apt/sources.list.bak</span><br></pre></td></tr></table></figure>
+
+<h3 id="回车–-gt"><a href="#回车–-gt" class="headerlink" title="回车–&gt;"></a>回车–&gt;</h3><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><figure class="highlight pascal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod <span class="number">777</span> /etc/apt/sources.list</span><br></pre></td></tr></table></figure>
+
+<h3 id="回车–-gt-1"><a href="#回车–-gt-1" class="headerlink" title="回车–&gt;"></a>回车–&gt;</h3><h3 id="输入-1"><a href="#输入-1" class="headerlink" title="输入"></a>输入</h3><figure class="highlight pascal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gedit  /etc/apt/sources.list</span><br></pre></td></tr></table></figure>
+
+<h3 id="回车-可能会出现warning：The-owner-of-…，忽略-–-gt"><a href="#回车-可能会出现warning：The-owner-of-…，忽略-–-gt" class="headerlink" title="回车(可能会出现warning：The owner of …，忽略)–&gt;"></a>回车(可能会出现warning：The owner of …，忽略)–&gt;</h3><h3 id="将文件中原内容共10条用-注释，在末尾粘贴以下行，点击右上角保存，点击右上角❌关闭文件–-gt"><a href="#将文件中原内容共10条用-注释，在末尾粘贴以下行，点击右上角保存，点击右上角❌关闭文件–-gt" class="headerlink" title="将文件中原内容共10条用#注释，在末尾粘贴以下行，点击右上角保存，点击右上角❌关闭文件–&gt;"></a>将文件中原内容共10条用#注释，在末尾粘贴以下行，点击右上角保存，点击右上角❌关闭文件–&gt;</h3><figure class="highlight pascal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">deb http:<span class="comment">//mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse</span></span><br><span class="line">deb-src http:<span class="comment">//mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse</span></span><br><span class="line"> </span><br><span class="line">deb http:<span class="comment">//mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse</span></span><br><span class="line">deb-src http:<span class="comment">//mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse</span></span><br><span class="line"> </span><br><span class="line">deb http:<span class="comment">//mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse</span></span><br><span class="line">deb-src http:<span class="comment">//mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse</span></span><br><span class="line"> </span><br><span class="line">deb http:<span class="comment">//mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse</span></span><br><span class="line">deb-src http:<span class="comment">//mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse</span></span><br><span class="line"> </span><br><span class="line">deb http:<span class="comment">//mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse</span></span><br><span class="line">deb-src http:<span class="comment">//mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="终端输入"><a href="#终端输入" class="headerlink" title="终端输入"></a>终端输入</h3><figure class="highlight pascal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update</span><br></pre></td></tr></table></figure>
+
+<h3 id="回车-更新软件列表，换源完成-，等待完成–-gt"><a href="#回车-更新软件列表，换源完成-，等待完成–-gt" class="headerlink" title="回车(更新软件列表，换源完成)，等待完成–&gt;"></a>回车(更新软件列表，换源完成)，等待完成–&gt;</h3><h3 id="输入-2"><a href="#输入-2" class="headerlink" title="输入"></a>输入</h3><figure class="highlight pascal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get  install -f</span><br></pre></td></tr></table></figure>
+
+<h3 id="回车-恢复损坏的软件包，尝试卸载出错的包，重新安装正确版本-，等待完成–-gt"><a href="#回车-恢复损坏的软件包，尝试卸载出错的包，重新安装正确版本-，等待完成–-gt" class="headerlink" title="回车(恢复损坏的软件包，尝试卸载出错的包，重新安装正确版本)，等待完成–&gt;"></a>回车(恢复损坏的软件包，尝试卸载出错的包，重新安装正确版本)，等待完成–&gt;</h3><h3 id="输入-3"><a href="#输入-3" class="headerlink" title="输入"></a>输入</h3><figure class="highlight pascal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get upgrade</span><br></pre></td></tr></table></figure>
+
+<h3 id="回车-更新软件-，等待完成–-gt"><a href="#回车-更新软件-，等待完成–-gt" class="headerlink" title="回车(更新软件)，等待完成–&gt;"></a>回车(更新软件)，等待完成–&gt;</h3><h3 id="ctrl-d（关闭终端）"><a href="#ctrl-d（关闭终端）" class="headerlink" title="ctrl+d（关闭终端）"></a>ctrl+d（关闭终端）</h3> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ubuntu/" rel="tag">Ubuntu</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8F%8C%E7%B3%BB%E7%BB%9F/" rel="tag">双系统</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
+  id="post-Ubuntu/20221119-Win10+Ubuntu双系统安装配置教程（五）——root初始化"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/10/28/Ubuntu/20221119-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%94%EF%BC%89%E2%80%94%E2%80%94root%E5%88%9D%E5%A7%8B%E5%8C%96/"
+    >Win10+Ubuntu双系统安装配置教程（五）——	root初始化</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2022/10/28/Ubuntu/20221119-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%94%EF%BC%89%E2%80%94%E2%80%94root%E5%88%9D%E5%A7%8B%E5%8C%96/" class="article-date">
+  <time datetime="2022-10-27T16:00:00.000Z" itemprop="datePublished">2022-10-28</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Ubuntu%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/">Ubuntu系统安装及配置</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h3 id="您当前所在的页面是-Win10-Ubuntu双系统安装配置教程（五）——root初始化，点击下方超链接实现自动跳转！"><a href="#您当前所在的页面是-Win10-Ubuntu双系统安装配置教程（五）——root初始化，点击下方超链接实现自动跳转！" class="headerlink" title="您当前所在的页面是 Win10+Ubuntu双系统安装配置教程（五）——	root初始化，点击下方超链接实现自动跳转！"></a>您当前所在的页面是 Win10+Ubuntu双系统安装配置教程（五）——	root初始化，点击下方超链接实现自动跳转！</h3><p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/24/Ubuntu/20221115-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9CUbuntu%E5%90%AF%E5%8A%A8%E7%9B%98/">Win10+Ubuntu双系统安装配置教程（一）——制作Ubuntu启动盘</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/25/Ubuntu/20221116-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/">Win10+Ubuntu双系统安装配置教程（二）——磁盘分区</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/26/Ubuntu/20221117-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%89%EF%BC%89%E2%80%94%E2%80%94%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/">Win10+Ubuntu双系统安装配置教程（三）——准备工作</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/27/Ubuntu/20221117-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%9B%9B%EF%BC%89%E2%80%94%E2%80%94ubuntu%E5%AE%89%E8%A3%85/">Win10+Ubuntu双系统安装配置教程（四）——ubuntu安装</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/28/Ubuntu/20221119-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%94%EF%BC%89%E2%80%94%E2%80%94root%E5%88%9D%E5%A7%8B%E5%8C%96/"> Win10+Ubuntu双系统安装配置教程（五）——	root初始化</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/29/Ubuntu/20221120-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%85%AD%EF%BC%89%E2%80%94%E2%80%94%E6%8D%A2%E6%BA%90/">Win10+Ubuntu双系统安装配置教程（六）——换源</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/30/Ubuntu/20221120-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%83%EF%BC%89%E2%80%94%E2%80%94%E5%AE%89%E8%A3%85%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95/">Win10+Ubuntu双系统安装配置教程（七）——安装搜狗输入法</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/31/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%85%AB%EF%BC%89%E2%80%94%E2%80%94%E5%AE%89%E8%A3%85nvidia%E9%A9%B1%E5%8A%A8/">Win10+Ubuntu双系统安装配置教程（八）——安装nvidia驱动</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/11/01/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B9%9D%EF%BC%89%E2%80%94%E2%80%94%E5%AE%89%E8%A3%85Anaconda%E5%B9%B6%E6%8D%A2%E6%BA%90/">Win10+Ubuntu双系统安装配置教程（九）——安装Anaconda并换源</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/11/02/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%8D%81%EF%BC%89%E2%80%94%E2%80%94%E5%9C%A8%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E4%B8%AD%E5%AE%89%E8%A3%85Tensorflow+keras%E6%A1%86%E6%9E%B6/">Win10+Ubuntu双系统安装配置教程（十）——创建虚拟环境并安装Tensorflow+keras框架</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/11/03/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%8D%81%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94%E5%9C%A8%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E4%B8%AD%E5%AE%89%E8%A3%85pytorch%E6%A1%86%E6%9E%B6/">Win10+Ubuntu双系统安装配置教程（十一）——在虚拟环境中安装pytorch框架</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/11/04/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%8D%81%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E5%AE%8C%E5%85%A8%E5%8D%B8%E8%BD%BDubuntu/">Win10+Ubuntu双系统安装配置教程（十二）——完全卸载ubuntu</a></p>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="五、root初始化"><a href="#五、root初始化" class="headerlink" title="五、root初始化"></a>五、root初始化</h1><p>[TOC]</p>
+<p>提示：ctrl+shift+c 复制终端文本，ctrl+shift+v 粘贴文本到终端</p>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="点击左下角九个点，点击终端，输入sudo-passwd-root，回车–-gt"><a href="#点击左下角九个点，点击终端，输入sudo-passwd-root，回车–-gt" class="headerlink" title="点击左下角九个点，点击终端，输入sudo passwd root，回车–&gt;"></a>点击左下角九个点，点击终端，输入sudo passwd root，回车–&gt;</h3><h3 id="按照提示输入密码，回车–-gt"><a href="#按照提示输入密码，回车–-gt" class="headerlink" title="按照提示输入密码，回车–&gt;"></a>按照提示输入密码，回车–&gt;</h3><h3 id="确认密码，回车–-gt"><a href="#确认密码，回车–-gt" class="headerlink" title="确认密码，回车–&gt;"></a>确认密码，回车–&gt;</h3><h3 id="完成–-gt"><a href="#完成–-gt" class="headerlink" title="完成–&gt;"></a>完成–&gt;</h3><h3 id="ctrl-d退出终端"><a href="#ctrl-d退出终端" class="headerlink" title="ctrl+d退出终端"></a>ctrl+d退出终端</h3> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ubuntu/" rel="tag">Ubuntu</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8F%8C%E7%B3%BB%E7%BB%9F/" rel="tag">双系统</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
+  id="post-Ubuntu/20221117-Win10+Ubuntu双系统安装配置教程（四）——ubuntu安装"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/10/27/Ubuntu/20221117-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%9B%9B%EF%BC%89%E2%80%94%E2%80%94ubuntu%E5%AE%89%E8%A3%85/"
+    >Win10+Ubuntu双系统安装配置教程（四）——ubuntu安装</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2022/10/27/Ubuntu/20221117-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%9B%9B%EF%BC%89%E2%80%94%E2%80%94ubuntu%E5%AE%89%E8%A3%85/" class="article-date">
+  <time datetime="2022-10-26T16:00:00.000Z" itemprop="datePublished">2022-10-27</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Ubuntu%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/">Ubuntu系统安装及配置</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h3 id="您当前所在的页面是Win10-Ubuntu双系统安装配置教程（四）——ubuntu安装，点击下方超链接实现自动跳转！"><a href="#您当前所在的页面是Win10-Ubuntu双系统安装配置教程（四）——ubuntu安装，点击下方超链接实现自动跳转！" class="headerlink" title="您当前所在的页面是Win10+Ubuntu双系统安装配置教程（四）——ubuntu安装，点击下方超链接实现自动跳转！"></a>您当前所在的页面是Win10+Ubuntu双系统安装配置教程（四）——ubuntu安装，点击下方超链接实现自动跳转！</h3><p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/24/Ubuntu/20221115-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9CUbuntu%E5%90%AF%E5%8A%A8%E7%9B%98/">Win10+Ubuntu双系统安装配置教程（一）——制作Ubuntu启动盘</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/25/Ubuntu/20221116-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/">Win10+Ubuntu双系统安装配置教程（二）——磁盘分区</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/26/Ubuntu/20221117-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%89%EF%BC%89%E2%80%94%E2%80%94%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/">Win10+Ubuntu双系统安装配置教程（三）——准备工作</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/27/Ubuntu/20221117-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%9B%9B%EF%BC%89%E2%80%94%E2%80%94ubuntu%E5%AE%89%E8%A3%85/">Win10+Ubuntu双系统安装配置教程（四）——ubuntu安装</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/28/Ubuntu/20221119-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%94%EF%BC%89%E2%80%94%E2%80%94root%E5%88%9D%E5%A7%8B%E5%8C%96/"> Win10+Ubuntu双系统安装配置教程（五）——	root初始化</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/29/Ubuntu/20221120-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%85%AD%EF%BC%89%E2%80%94%E2%80%94%E6%8D%A2%E6%BA%90/">Win10+Ubuntu双系统安装配置教程（六）——换源</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/30/Ubuntu/20221120-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%83%EF%BC%89%E2%80%94%E2%80%94%E5%AE%89%E8%A3%85%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95/">Win10+Ubuntu双系统安装配置教程（七）——安装搜狗输入法</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/31/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%85%AB%EF%BC%89%E2%80%94%E2%80%94%E5%AE%89%E8%A3%85nvidia%E9%A9%B1%E5%8A%A8/">Win10+Ubuntu双系统安装配置教程（八）——安装nvidia驱动</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/11/01/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B9%9D%EF%BC%89%E2%80%94%E2%80%94%E5%AE%89%E8%A3%85Anaconda%E5%B9%B6%E6%8D%A2%E6%BA%90/">Win10+Ubuntu双系统安装配置教程（九）——安装Anaconda并换源</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/11/02/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%8D%81%EF%BC%89%E2%80%94%E2%80%94%E5%9C%A8%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E4%B8%AD%E5%AE%89%E8%A3%85Tensorflow+keras%E6%A1%86%E6%9E%B6/">Win10+Ubuntu双系统安装配置教程（十）——创建虚拟环境并安装Tensorflow+keras框架</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/11/03/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%8D%81%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94%E5%9C%A8%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E4%B8%AD%E5%AE%89%E8%A3%85pytorch%E6%A1%86%E6%9E%B6/">Win10+Ubuntu双系统安装配置教程（十一）——在虚拟环境中安装pytorch框架</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/11/04/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%8D%81%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E5%AE%8C%E5%85%A8%E5%8D%B8%E8%BD%BDubuntu/">Win10+Ubuntu双系统安装配置教程（十二）——完全卸载ubuntu</a></p>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="四、ubuntu安装"><a href="#四、ubuntu安装" class="headerlink" title="四、ubuntu安装"></a>四、ubuntu安装</h1><p>[TOC]</p>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="插入启动盘，重启，选择启动盘回车–-gt"><a href="#插入启动盘，重启，选择启动盘回车–-gt" class="headerlink" title="插入启动盘，重启，选择启动盘回车–&gt;"></a>插入启动盘，重启，选择启动盘回车–&gt;</h3><h3 id="按向下键到Install-Ubuntu回车-进入Ubuntu安装界面-–-gt"><a href="#按向下键到Install-Ubuntu回车-进入Ubuntu安装界面-–-gt" class="headerlink" title="按向下键到Install Ubuntu回车(进入Ubuntu安装界面)–&gt;"></a>按向下键到Install Ubuntu回车(进入Ubuntu安装界面)–&gt;</h3><h3 id="选择中文，继续–-gt"><a href="#选择中文，继续–-gt" class="headerlink" title="选择中文，继续–&gt;"></a>选择中文，继续–&gt;</h3><h3 id="选择汉语，继续–-gt"><a href="#选择汉语，继续–-gt" class="headerlink" title="选择汉语，继续–&gt;"></a>选择汉语，继续–&gt;</h3><h3 id="选择先不联网-未换源，下载速度较慢-，继续–-gt"><a href="#选择先不联网-未换源，下载速度较慢-，继续–-gt" class="headerlink" title="选择先不联网(未换源，下载速度较慢)，继续–&gt;"></a>选择先不联网(未换源，下载速度较慢)，继续–&gt;</h3><h3 id="选择最小安装-省内存，也选择正常安装，多了办公套件等，平时用不到，可以需要用时再安装-，继续–-gt"><a href="#选择最小安装-省内存，也选择正常安装，多了办公套件等，平时用不到，可以需要用时再安装-，继续–-gt" class="headerlink" title="选择最小安装(省内存，也选择正常安装，多了办公套件等，平时用不到，可以需要用时再安装)，继续–&gt;"></a>选择最小安装(省内存，也选择正常安装，多了办公套件等，平时用不到，可以需要用时再安装)，继续–&gt;</h3><h3 id="最好选择其他选项-可以自己手动分区，方便后续有问题卸载-–-gt"><a href="#最好选择其他选项-可以自己手动分区，方便后续有问题卸载-–-gt" class="headerlink" title="最好选择其他选项(可以自己手动分区，方便后续有问题卸载) –&gt;"></a>最好选择其他选项(可以自己手动分区，方便后续有问题卸载) –&gt;</h3><h3 id="找到刚在windows上分出来的未分配空间-根据大小判断-–-gt"><a href="#找到刚在windows上分出来的未分配空间-根据大小判断-–-gt" class="headerlink" title="找到刚在windows上分出来的未分配空间(根据大小判断)–&gt;"></a>找到刚在windows上分出来的未分配空间(根据大小判断)–&gt;</h3><h3 id="单击未分配空间，点击下方➕–-gt"><a href="#单击未分配空间，点击下方➕–-gt" class="headerlink" title="单击未分配空间，点击下方➕–&gt;"></a>单击未分配空间，点击下方➕–&gt;</h3><h3 id="大小一般填512MB即可，逻辑分区，空间起始位置，用于EFI系统分区，ok–-gt"><a href="#大小一般填512MB即可，逻辑分区，空间起始位置，用于EFI系统分区，ok–-gt" class="headerlink" title="大小一般填512MB即可，逻辑分区，空间起始位置，用于EFI系统分区，ok–&gt;"></a>大小一般填512MB即可，逻辑分区，空间起始位置，用于EFI系统分区，ok–&gt;</h3><h3 id="单击未分配空间，点击下方➕–-gt-1"><a href="#单击未分配空间，点击下方➕–-gt-1" class="headerlink" title="单击未分配空间，点击下方➕–&gt;"></a>单击未分配空间，点击下方➕–&gt;</h3><h3 id="大小一般在20G左右，我是分配了30G-x3D-30720MB，主分区，空间起始位置，Ext4日志文件系统，挂载点为-x2F-，ok–-gt"><a href="#大小一般在20G左右，我是分配了30G-x3D-30720MB，主分区，空间起始位置，Ext4日志文件系统，挂载点为-x2F-，ok–-gt" class="headerlink" title="大小一般在20G左右，我是分配了30G&#x3D;30720MB，主分区，空间起始位置，Ext4日志文件系统，挂载点为&#x2F;，ok–&gt;"></a>大小一般在20G左右，我是分配了30G&#x3D;30720MB，主分区，空间起始位置，Ext4日志文件系统，挂载点为&#x2F;，ok–&gt;</h3><h3 id="单击未分配空间，点击下方➕–-gt-2"><a href="#单击未分配空间，点击下方➕–-gt-2" class="headerlink" title="单击未分配空间，点击下方➕–&gt;"></a>单击未分配空间，点击下方➕–&gt;</h3><h3 id="大小一般在2G左右，我是分配了4G-x3D-4096MB，逻辑分区，空间起始位置，用于交换空间，ok–-gt"><a href="#大小一般在2G左右，我是分配了4G-x3D-4096MB，逻辑分区，空间起始位置，用于交换空间，ok–-gt" class="headerlink" title="大小一般在2G左右，我是分配了4G&#x3D;4096MB，逻辑分区，空间起始位置，用于交换空间，ok–&gt;"></a>大小一般在2G左右，我是分配了4G&#x3D;4096MB，逻辑分区，空间起始位置，用于交换空间，ok–&gt;</h3><h3 id="单击未分配空间，点击下方➕–-gt-3"><a href="#单击未分配空间，点击下方➕–-gt-3" class="headerlink" title="单击未分配空间，点击下方➕–&gt;"></a>单击未分配空间，点击下方➕–&gt;</h3><h3 id="大小为剩余所有空间-越大越好-，逻辑分区，空间起始位置，Ext4日志文件系统，挂载点为-x2F-home，ok–-gt"><a href="#大小为剩余所有空间-越大越好-，逻辑分区，空间起始位置，Ext4日志文件系统，挂载点为-x2F-home，ok–-gt" class="headerlink" title="大小为剩余所有空间(越大越好)，逻辑分区，空间起始位置，Ext4日志文件系统，挂载点为&#x2F;home，ok–&gt;"></a>大小为剩余所有空间(越大越好)，逻辑分区，空间起始位置，Ext4日志文件系统，挂载点为&#x2F;home，ok–&gt;</h3><h3 id="单击刚才新建的EFI分区，查看设备为-x2F-dev-x2F-sda8-各人不同，通过511MB和EFI判断，以电脑显示设备为准-–-gt"><a href="#单击刚才新建的EFI分区，查看设备为-x2F-dev-x2F-sda8-各人不同，通过511MB和EFI判断，以电脑显示设备为准-–-gt" class="headerlink" title="单击刚才新建的EFI分区，查看设备为&#x2F;dev&#x2F;sda8(各人不同，通过511MB和EFI判断，以电脑显示设备为准)–&gt;"></a>单击刚才新建的EFI分区，查看设备为&#x2F;dev&#x2F;sda8(各人不同，通过511MB和EFI判断，以电脑显示设备为准)–&gt;</h3><h3 id="将下方安装启动引导器的设备改为刚才的EFI分区设备，现在安装–-gt"><a href="#将下方安装启动引导器的设备改为刚才的EFI分区设备，现在安装–-gt" class="headerlink" title="将下方安装启动引导器的设备改为刚才的EFI分区设备，现在安装–&gt;"></a>将下方安装启动引导器的设备改为刚才的EFI分区设备，现在安装–&gt;</h3><h3 id="跳出是否将改动写入磁盘，确认没问题后点击继续–-gt"><a href="#跳出是否将改动写入磁盘，确认没问题后点击继续–-gt" class="headerlink" title="跳出是否将改动写入磁盘，确认没问题后点击继续–&gt;"></a>跳出是否将改动写入磁盘，确认没问题后点击继续–&gt;</h3><h3 id="位置确认没问题后点击继续–-gt"><a href="#位置确认没问题后点击继续–-gt" class="headerlink" title="位置确认没问题后点击继续–&gt;"></a>位置确认没问题后点击继续–&gt;</h3><h3 id="输入基本信息后点击继续–-gt"><a href="#输入基本信息后点击继续–-gt" class="headerlink" title="输入基本信息后点击继续–&gt;"></a>输入基本信息后点击继续–&gt;</h3><h3 id="等待跳出安装完成，点击现在重启–-gt"><a href="#等待跳出安装完成，点击现在重启–-gt" class="headerlink" title="等待跳出安装完成，点击现在重启–&gt;"></a>等待跳出安装完成，点击现在重启–&gt;</h3><h3 id="选择Ubuntu，若直接跳到win系统，则按-三-准备工作中进入bios方法，进入bios界面-Boot，将ubuntu调整到win上方–-gt"><a href="#选择Ubuntu，若直接跳到win系统，则按-三-准备工作中进入bios方法，进入bios界面-Boot，将ubuntu调整到win上方–-gt" class="headerlink" title="选择Ubuntu，若直接跳到win系统，则按(三)准备工作中进入bios方法，进入bios界面-Boot，将ubuntu调整到win上方–&gt;"></a>选择Ubuntu，若直接跳到win系统，则按(三)准备工作中进入bios方法，进入bios界面-Boot，将ubuntu调整到win上方–&gt;</h3><h3 id="再次进入ubuntu系统后拔出启动盘–-gt"><a href="#再次进入ubuntu系统后拔出启动盘–-gt" class="headerlink" title="再次进入ubuntu系统后拔出启动盘–&gt;"></a>再次进入ubuntu系统后拔出启动盘–&gt;</h3><h3 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h3><p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221657092.png" alt="image-20221122165728939"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221657418.png" alt="image-20221122165736293"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221657631.png" alt="image-20221122165743504"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221657524.png" alt="image-20221122165750405"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221657697.png" alt="image-20221122165756562"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221658941.png" alt="image-20221122165803793"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221658460.png" alt="image-20221122165812326"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221658661.png" alt="image-20221122165818526"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221658785.png" alt="image-20221122165850660"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221658477.png" alt="image-20221122165859339"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221659056.png" alt="image-20221122165924926"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221700138.png" alt="image-20221122170002007"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221700065.png" alt="image-20221122170007940"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221700977.png" alt="image-20221122170015825"></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ubuntu/" rel="tag">Ubuntu</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8F%8C%E7%B3%BB%E7%BB%9F/" rel="tag">双系统</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
+  id="post-Ubuntu/20221117-Win10+Ubuntu双系统安装配置教程（三）——准备工作"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/10/26/Ubuntu/20221117-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%89%EF%BC%89%E2%80%94%E2%80%94%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/"
+    >Win10+Ubuntu双系统安装配置教程（三）——准备工作</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2022/10/26/Ubuntu/20221117-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%89%EF%BC%89%E2%80%94%E2%80%94%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/" class="article-date">
+  <time datetime="2022-10-25T16:00:00.000Z" itemprop="datePublished">2022-10-26</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Ubuntu%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/">Ubuntu系统安装及配置</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h3 id="您当前所在的页面是Win10-Ubuntu双系统安装配置教程（三）——准备工作，点击下方超链接实现自动跳转！"><a href="#您当前所在的页面是Win10-Ubuntu双系统安装配置教程（三）——准备工作，点击下方超链接实现自动跳转！" class="headerlink" title="您当前所在的页面是Win10+Ubuntu双系统安装配置教程（三）——准备工作，点击下方超链接实现自动跳转！"></a>您当前所在的页面是Win10+Ubuntu双系统安装配置教程（三）——准备工作，点击下方超链接实现自动跳转！</h3><p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/24/Ubuntu/20221115-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9CUbuntu%E5%90%AF%E5%8A%A8%E7%9B%98/">Win10+Ubuntu双系统安装配置教程（一）——制作Ubuntu启动盘</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/25/Ubuntu/20221116-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/">Win10+Ubuntu双系统安装配置教程（二）——磁盘分区</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/26/Ubuntu/20221117-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%89%EF%BC%89%E2%80%94%E2%80%94%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/">Win10+Ubuntu双系统安装配置教程（三）——准备工作</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/27/Ubuntu/20221117-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%9B%9B%EF%BC%89%E2%80%94%E2%80%94ubuntu%E5%AE%89%E8%A3%85/">Win10+Ubuntu双系统安装配置教程（四）——ubuntu安装</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/28/Ubuntu/20221119-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%94%EF%BC%89%E2%80%94%E2%80%94root%E5%88%9D%E5%A7%8B%E5%8C%96/"> Win10+Ubuntu双系统安装配置教程（五）——	root初始化</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/29/Ubuntu/20221120-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%85%AD%EF%BC%89%E2%80%94%E2%80%94%E6%8D%A2%E6%BA%90/">Win10+Ubuntu双系统安装配置教程（六）——换源</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/30/Ubuntu/20221120-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%83%EF%BC%89%E2%80%94%E2%80%94%E5%AE%89%E8%A3%85%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95/">Win10+Ubuntu双系统安装配置教程（七）——安装搜狗输入法</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/31/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%85%AB%EF%BC%89%E2%80%94%E2%80%94%E5%AE%89%E8%A3%85nvidia%E9%A9%B1%E5%8A%A8/">Win10+Ubuntu双系统安装配置教程（八）——安装nvidia驱动</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/11/01/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B9%9D%EF%BC%89%E2%80%94%E2%80%94%E5%AE%89%E8%A3%85Anaconda%E5%B9%B6%E6%8D%A2%E6%BA%90/">Win10+Ubuntu双系统安装配置教程（九）——安装Anaconda并换源</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/11/02/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%8D%81%EF%BC%89%E2%80%94%E2%80%94%E5%9C%A8%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E4%B8%AD%E5%AE%89%E8%A3%85Tensorflow+keras%E6%A1%86%E6%9E%B6/">Win10+Ubuntu双系统安装配置教程（十）——创建虚拟环境并安装Tensorflow+keras框架</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/11/03/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%8D%81%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94%E5%9C%A8%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E4%B8%AD%E5%AE%89%E8%A3%85pytorch%E6%A1%86%E6%9E%B6/">Win10+Ubuntu双系统安装配置教程（十一）——在虚拟环境中安装pytorch框架</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/11/04/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%8D%81%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E5%AE%8C%E5%85%A8%E5%8D%B8%E8%BD%BDubuntu/">Win10+Ubuntu双系统安装配置教程（十二）——完全卸载ubuntu</a></p>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="三、准备工作"><a href="#三、准备工作" class="headerlink" title="三、准备工作"></a>三、准备工作</h1><p>$\color{red}{插入启动盘！！！}$</p>
+<p>[TOC]</p>
+<h2 id="1-关闭BitLocker"><a href="#1-关闭BitLocker" class="headerlink" title="1. 关闭BitLocker"></a>1. 关闭BitLocker</h2><p>（win10家庭版一般没有BitLocker，搜索不到，建议尝试一下，以防万一）</p>
+<h3 id="放大镜搜索BitLocker–-gt"><a href="#放大镜搜索BitLocker–-gt" class="headerlink" title="放大镜搜索BitLocker–&gt;"></a>放大镜搜索BitLocker–&gt;</h3><h3 id="打开–-gt"><a href="#打开–-gt" class="headerlink" title="打开–&gt;"></a>打开–&gt;</h3><h3 id="设备加密关闭"><a href="#设备加密关闭" class="headerlink" title="设备加密关闭"></a>设备加密关闭</h3><p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221538756.png" alt="image-20221122153845468"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221539178.png" alt="image-20221122153912137"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221539363.png" alt="image-20221122153921326"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221539175.png" alt="image-20221122153930138"></p>
+<h2 id="2-关闭安全启动-Security-Boot-和自启动-Fast-Boot-，关闭平台可信模块-TPM"><a href="#2-关闭安全启动-Security-Boot-和自启动-Fast-Boot-，关闭平台可信模块-TPM" class="headerlink" title="2. 关闭安全启动(Security Boot)和自启动(Fast Boot)，关闭平台可信模块(TPM)"></a>2. 关闭安全启动(Security Boot)和自启动(Fast Boot)，关闭平台可信模块(TPM)</h2><h3 id="2-1-进入bios界面"><a href="#2-1-进入bios界面" class="headerlink" title="2.1 进入bios界面"></a>2.1 进入bios界面</h3><h3 id="放大镜搜索设置并打开–-gt"><a href="#放大镜搜索设置并打开–-gt" class="headerlink" title="放大镜搜索设置并打开–&gt;"></a>放大镜搜索设置并打开–&gt;</h3><h3 id="点击更新与安全–-gt"><a href="#点击更新与安全–-gt" class="headerlink" title="点击更新与安全–&gt;"></a>点击更新与安全–&gt;</h3><h3 id="点击左侧栏恢复–-gt"><a href="#点击左侧栏恢复–-gt" class="headerlink" title="点击左侧栏恢复–&gt;"></a>点击左侧栏恢复–&gt;</h3><h3 id="点击立即重新启动–-gt"><a href="#点击立即重新启动–-gt" class="headerlink" title="点击立即重新启动–&gt;"></a>点击立即重新启动–&gt;</h3><h3 id="点击疑难解答–-gt"><a href="#点击疑难解答–-gt" class="headerlink" title="点击疑难解答–&gt;"></a>点击疑难解答–&gt;</h3><h3 id="点击高级选项–-gt"><a href="#点击高级选项–-gt" class="headerlink" title="点击高级选项–&gt;"></a>点击高级选项–&gt;</h3><h3 id="点击UEFI固件设置–-gt"><a href="#点击UEFI固件设置–-gt" class="headerlink" title="点击UEFI固件设置–&gt;"></a>点击UEFI固件设置–&gt;</h3><h3 id="点击重新启动–-gt"><a href="#点击重新启动–-gt" class="headerlink" title="点击重新启动–&gt;"></a>点击重新启动–&gt;</h3><h3 id="显示bios界面"><a href="#显示bios界面" class="headerlink" title="显示bios界面"></a>显示bios界面</h3><p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221600282.png" alt="image-20221122160030197"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221600073.png" alt="image-20221122160043041"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221600493.png" alt="image-20221122160050451"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221600457.png" alt="image-20221122160056335"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221601803.png" alt="image-20221122160102677"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221601667.png" alt="image-20221122160111537"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221601374.png" alt="image-20221122160119260"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221601556.png" alt="image-20221122160125432"></p>
+<h3 id="2-2-关闭安全启动、自启动、平台可信模块"><a href="#2-2-关闭安全启动、自启动、平台可信模块" class="headerlink" title="2.2 关闭安全启动、自启动、平台可信模块"></a>2.2 关闭安全启动、自启动、平台可信模块</h3><h3 id="按键盘向右键到Security–-gt"><a href="#按键盘向右键到Security–-gt" class="headerlink" title="按键盘向右键到Security–&gt;"></a>按键盘向右键到Security–&gt;</h3><h3 id="按向下键到Secure-Boot–-gt"><a href="#按向下键到Secure-Boot–-gt" class="headerlink" title="按向下键到Secure Boot–&gt;"></a>按向下键到Secure Boot–&gt;</h3><h3 id="按照下方指示按F5更改参数为Disabled–-gt"><a href="#按照下方指示按F5更改参数为Disabled–-gt" class="headerlink" title="按照下方指示按F5更改参数为Disabled–&gt;"></a>按照下方指示按F5更改参数为Disabled–&gt;</h3><h3 id="若Security界面有TPM也将其参数改为Disabled，没有则跳过–-gt"><a href="#若Security界面有TPM也将其参数改为Disabled，没有则跳过–-gt" class="headerlink" title="若Security界面有TPM也将其参数改为Disabled，没有则跳过–&gt;"></a>若Security界面有TPM也将其参数改为Disabled，没有则跳过–&gt;</h3><h3 id="按向右键到Boot–-gt"><a href="#按向右键到Boot–-gt" class="headerlink" title="按向右键到Boot–&gt;"></a>按向右键到Boot–&gt;</h3><h3 id="按向下键到Fast-Boot–-gt"><a href="#按向下键到Fast-Boot–-gt" class="headerlink" title="按向下键到Fast Boot–&gt;"></a>按向下键到Fast Boot–&gt;</h3><h3 id="按F5更改参数为Disabled–-gt"><a href="#按F5更改参数为Disabled–-gt" class="headerlink" title="按F5更改参数为Disabled–&gt;"></a>按F5更改参数为Disabled–&gt;</h3><h3 id="按向下键到Windows-Boot-Manager–-gt"><a href="#按向下键到Windows-Boot-Manager–-gt" class="headerlink" title="按向下键到Windows Boot Manager–&gt;"></a>按向下键到Windows Boot Manager–&gt;</h3><h3 id="按F5将启动盘放在第一位–-gt"><a href="#按F5将启动盘放在第一位–-gt" class="headerlink" title="按F5将启动盘放在第一位–&gt;"></a>按F5将启动盘放在第一位–&gt;</h3><h3 id="按F10保存并退出–-gt"><a href="#按F10保存并退出–-gt" class="headerlink" title="按F10保存并退出–&gt;"></a>按F10保存并退出–&gt;</h3><h3 id="按回车回到win10系统"><a href="#按回车回到win10系统" class="headerlink" title="按回车回到win10系统"></a>按回车回到win10系统</h3><p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221616119.png" alt="image-20221122161610011"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221616696.png" alt="image-20221122161617593"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221616546.png" alt="image-20221122161624440"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221616202.png" alt="image-20221122161631065"></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ubuntu/" rel="tag">Ubuntu</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8F%8C%E7%B3%BB%E7%BB%9F/" rel="tag">双系统</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
+  id="post-Ubuntu/20221116-Win10+Ubuntu双系统安装配置教程（二）——磁盘分区"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/10/25/Ubuntu/20221116-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/"
+    >Win10+Ubuntu双系统安装配置教程（二）——磁盘分区</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2022/10/25/Ubuntu/20221116-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/" class="article-date">
+  <time datetime="2022-10-24T16:00:00.000Z" itemprop="datePublished">2022-10-25</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Ubuntu%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/">Ubuntu系统安装及配置</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h3 id="您当前所在的页面是Win10-Ubuntu双系统安装配置教程（二）——磁盘分区，点击下方超链接实现自动跳转！"><a href="#您当前所在的页面是Win10-Ubuntu双系统安装配置教程（二）——磁盘分区，点击下方超链接实现自动跳转！" class="headerlink" title="您当前所在的页面是Win10+Ubuntu双系统安装配置教程（二）——磁盘分区，点击下方超链接实现自动跳转！"></a>您当前所在的页面是Win10+Ubuntu双系统安装配置教程（二）——磁盘分区，点击下方超链接实现自动跳转！</h3><p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/24/Ubuntu/20221115-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9CUbuntu%E5%90%AF%E5%8A%A8%E7%9B%98/">Win10+Ubuntu双系统安装配置教程（一）——制作Ubuntu启动盘</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/25/Ubuntu/20221116-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/">Win10+Ubuntu双系统安装配置教程（二）——磁盘分区</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/26/Ubuntu/20221117-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%89%EF%BC%89%E2%80%94%E2%80%94%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/">Win10+Ubuntu双系统安装配置教程（三）——准备工作</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/27/Ubuntu/20221117-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%9B%9B%EF%BC%89%E2%80%94%E2%80%94ubuntu%E5%AE%89%E8%A3%85/">Win10+Ubuntu双系统安装配置教程（四）——ubuntu安装</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/28/Ubuntu/20221119-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%94%EF%BC%89%E2%80%94%E2%80%94root%E5%88%9D%E5%A7%8B%E5%8C%96/"> Win10+Ubuntu双系统安装配置教程（五）——	root初始化</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/29/Ubuntu/20221120-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%85%AD%EF%BC%89%E2%80%94%E2%80%94%E6%8D%A2%E6%BA%90/">Win10+Ubuntu双系统安装配置教程（六）——换源</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/30/Ubuntu/20221120-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%83%EF%BC%89%E2%80%94%E2%80%94%E5%AE%89%E8%A3%85%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95/">Win10+Ubuntu双系统安装配置教程（七）——安装搜狗输入法</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/31/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%85%AB%EF%BC%89%E2%80%94%E2%80%94%E5%AE%89%E8%A3%85nvidia%E9%A9%B1%E5%8A%A8/">Win10+Ubuntu双系统安装配置教程（八）——安装nvidia驱动</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/11/01/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B9%9D%EF%BC%89%E2%80%94%E2%80%94%E5%AE%89%E8%A3%85Anaconda%E5%B9%B6%E6%8D%A2%E6%BA%90/">Win10+Ubuntu双系统安装配置教程（九）——安装Anaconda并换源</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/11/02/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%8D%81%EF%BC%89%E2%80%94%E2%80%94%E5%9C%A8%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E4%B8%AD%E5%AE%89%E8%A3%85Tensorflow+keras%E6%A1%86%E6%9E%B6/">Win10+Ubuntu双系统安装配置教程（十）——创建虚拟环境并安装Tensorflow+keras框架</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/11/03/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%8D%81%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94%E5%9C%A8%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E4%B8%AD%E5%AE%89%E8%A3%85pytorch%E6%A1%86%E6%9E%B6/">Win10+Ubuntu双系统安装配置教程（十一）——在虚拟环境中安装pytorch框架</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/11/04/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%8D%81%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E5%AE%8C%E5%85%A8%E5%8D%B8%E8%BD%BDubuntu/">Win10+Ubuntu双系统安装配置教程（十二）——完全卸载ubuntu</a></p>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="二、磁盘分区"><a href="#二、磁盘分区" class="headerlink" title="二、磁盘分区"></a>二、磁盘分区</h1><p>[TOC]</p>
+<p>$\color{red}{注意}$：仍然在Win10系统上进行以下操作</p>
+<p>（如果要下载tensorflow+keras或者pytorch，强烈建议100G以上！！！我先分的50G，后面安框架提示内存不足，只能卸掉系统重来一遍）</p>
+<p>（由于笔者win10系统分区时未截图，整理步骤时后续安装等已完成，不再重复操作，以一台win11电脑作分区演示）</p>
+<h2 id="1-分区步骤"><a href="#1-分区步骤" class="headerlink" title="1. 分区步骤"></a>1. 分区步骤</h2><h3 id="放大镜搜索创建并格式化硬盘分区，打开–-gt"><a href="#放大镜搜索创建并格式化硬盘分区，打开–-gt" class="headerlink" title="放大镜搜索创建并格式化硬盘分区，打开–&gt;"></a>放大镜搜索创建并格式化硬盘分区，打开–&gt;</h3><h3 id="鼠标放到一个空间较大的磁盘上（这里建议分D盘，C盘是win系统盘，分C盘可能会存在系统兼容问题，会有点麻烦。）–-gt"><a href="#鼠标放到一个空间较大的磁盘上（这里建议分D盘，C盘是win系统盘，分C盘可能会存在系统兼容问题，会有点麻烦。）–-gt" class="headerlink" title="鼠标放到一个空间较大的磁盘上（这里建议分D盘，C盘是win系统盘，分C盘可能会存在系统兼容问题，会有点麻烦。）–&gt;"></a>鼠标放到一个空间较大的磁盘上（这里建议分D盘，C盘是win系统盘，分C盘可能会存在系统兼容问题，会有点麻烦。）–&gt;</h3><h3 id="右击–-gt"><a href="#右击–-gt" class="headerlink" title="右击–&gt;"></a>右击–&gt;</h3><h3 id="压缩卷–-gt"><a href="#压缩卷–-gt" class="headerlink" title="压缩卷–&gt;"></a>压缩卷–&gt;</h3><h3 id="输入要分出的卷大小M，-若要分出130G，则输入-130-1024-133120-–-gt"><a href="#输入要分出的卷大小M，-若要分出130G，则输入-130-1024-133120-–-gt" class="headerlink" title="输入要分出的卷大小M，(若要分出130G，则输入(130*1024)133120)–&gt;"></a>输入要分出的卷大小M，(若要分出130G，则输入(130*1024)133120)–&gt;</h3><h3 id="看到130G未分配空间表示分盘完成，直接叉掉磁盘管理"><a href="#看到130G未分配空间表示分盘完成，直接叉掉磁盘管理" class="headerlink" title="看到130G未分配空间表示分盘完成，直接叉掉磁盘管理"></a>看到130G未分配空间表示分盘完成，直接叉掉磁盘管理</h3><p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221157519.png" alt="image-20221122115721303"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221157273.png" alt="image-20221122115734227"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221157853.png" alt="image-20221122115750807"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221157928.png" alt="image-20221122115757882"></p>
+<h2 id="2-分区大小建议"><a href="#2-分区大小建议" class="headerlink" title="2. 分区大小建议"></a>2. 分区大小建议</h2><h3 id="分出空间根据D盘大小决定，若只是试试Linux系统，分出30G即可；若搞深度学习和机器学习，建议100G以上。"><a href="#分出空间根据D盘大小决定，若只是试试Linux系统，分出30G即可；若搞深度学习和机器学习，建议100G以上。" class="headerlink" title="分出空间根据D盘大小决定，若只是试试Linux系统，分出30G即可；若搞深度学习和机器学习，建议100G以上。"></a>分出空间根据D盘大小决定，若只是试试Linux系统，分出30G即可；若搞深度学习和机器学习，建议100G以上。</h3> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ubuntu/" rel="tag">Ubuntu</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8F%8C%E7%B3%BB%E7%BB%9F/" rel="tag">双系统</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
+  id="post-Ubuntu/20221115-Win10+Ubuntu双系统安装配置教程（一）——制作Ubuntu启动盘"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/10/24/Ubuntu/20221115-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9CUbuntu%E5%90%AF%E5%8A%A8%E7%9B%98/"
+    >Win10+Ubuntu双系统安装配置教程（一）——制作Ubuntu启动盘</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2022/10/24/Ubuntu/20221115-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9CUbuntu%E5%90%AF%E5%8A%A8%E7%9B%98/" class="article-date">
+  <time datetime="2022-10-23T16:00:00.000Z" itemprop="datePublished">2022-10-24</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Ubuntu%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/">Ubuntu系统安装及配置</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h3 id="您当前所在的页面是Win10-Ubuntu双系统安装配置教程（一）——制作Ubuntu启动盘，点击下方超链接实现自动跳转！"><a href="#您当前所在的页面是Win10-Ubuntu双系统安装配置教程（一）——制作Ubuntu启动盘，点击下方超链接实现自动跳转！" class="headerlink" title="您当前所在的页面是Win10+Ubuntu双系统安装配置教程（一）——制作Ubuntu启动盘，点击下方超链接实现自动跳转！"></a>您当前所在的页面是Win10+Ubuntu双系统安装配置教程（一）——制作Ubuntu启动盘，点击下方超链接实现自动跳转！</h3><p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/24/Ubuntu/20221115-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94%E5%88%B6%E4%BD%9CUbuntu%E5%90%AF%E5%8A%A8%E7%9B%98/">Win10+Ubuntu双系统安装配置教程（一）——制作Ubuntu启动盘</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/25/Ubuntu/20221116-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/">Win10+Ubuntu双系统安装配置教程（二）——磁盘分区</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/26/Ubuntu/20221117-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%89%EF%BC%89%E2%80%94%E2%80%94%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/">Win10+Ubuntu双系统安装配置教程（三）——准备工作</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/27/Ubuntu/20221117-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%9B%9B%EF%BC%89%E2%80%94%E2%80%94ubuntu%E5%AE%89%E8%A3%85/">Win10+Ubuntu双系统安装配置教程（四）——ubuntu安装</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/28/Ubuntu/20221119-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%94%EF%BC%89%E2%80%94%E2%80%94root%E5%88%9D%E5%A7%8B%E5%8C%96/"> Win10+Ubuntu双系统安装配置教程（五）——	root初始化</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/29/Ubuntu/20221120-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%85%AD%EF%BC%89%E2%80%94%E2%80%94%E6%8D%A2%E6%BA%90/">Win10+Ubuntu双系统安装配置教程（六）——换源</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/30/Ubuntu/20221120-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%83%EF%BC%89%E2%80%94%E2%80%94%E5%AE%89%E8%A3%85%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95/">Win10+Ubuntu双系统安装配置教程（七）——安装搜狗输入法</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/10/31/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%85%AB%EF%BC%89%E2%80%94%E2%80%94%E5%AE%89%E8%A3%85nvidia%E9%A9%B1%E5%8A%A8/">Win10+Ubuntu双系统安装配置教程（八）——安装nvidia驱动</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/11/01/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E4%B9%9D%EF%BC%89%E2%80%94%E2%80%94%E5%AE%89%E8%A3%85Anaconda%E5%B9%B6%E6%8D%A2%E6%BA%90/">Win10+Ubuntu双系统安装配置教程（九）——安装Anaconda并换源</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/11/02/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%8D%81%EF%BC%89%E2%80%94%E2%80%94%E5%9C%A8%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E4%B8%AD%E5%AE%89%E8%A3%85Tensorflow+keras%E6%A1%86%E6%9E%B6/">Win10+Ubuntu双系统安装配置教程（十）——创建虚拟环境并安装Tensorflow+keras框架</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/11/03/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%8D%81%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94%E5%9C%A8%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E4%B8%AD%E5%AE%89%E8%A3%85pytorch%E6%A1%86%E6%9E%B6/">Win10+Ubuntu双系统安装配置教程（十一）——在虚拟环境中安装pytorch框架</a></p>
+<p><a target="_blank" rel="noopener" href="https://linglingge2000.github.io/2022/11/04/Ubuntu/20221122-Win10+Ubuntu%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B%EF%BC%88%E5%8D%81%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E5%AE%8C%E5%85%A8%E5%8D%B8%E8%BD%BDubuntu/">Win10+Ubuntu双系统安装配置教程（十二）——完全卸载ubuntu</a></p>
+<h1 id="一、制作Ubuntu启动盘"><a href="#一、制作Ubuntu启动盘" class="headerlink" title="一、制作Ubuntu启动盘"></a>一、制作Ubuntu启动盘</h1><p>[toc]</p>
+<p>准备一个容量大于4GB的空u盘，$\color{red}{插上}$。</p>
+<p>$\color{red}注意$：以下两个下载不要放在待制作的u盘里，放电脑任意位置！</p>
+<h2 id="1-下载rufus制作启动盘-下载后先别打开！"><a href="#1-下载rufus制作启动盘-下载后先别打开！" class="headerlink" title="1. 下载rufus制作启动盘(下载后先别打开！)"></a>1. 下载rufus制作启动盘(下载后先别打开！)</h2><figure class="highlight pascal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">网址：http:<span class="comment">//rufus.ie/en/</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221147531.png" alt="image-20221122114545663"></p>
+<h2 id="2-下载ubuntu18-04-6-LTS-较稳定-系统镜像"><a href="#2-下载ubuntu18-04-6-LTS-较稳定-系统镜像" class="headerlink" title="2. 下载ubuntu18.04.6 LTS(较稳定)系统镜像"></a>2. 下载ubuntu18.04.6 LTS(较稳定)系统镜像</h2><figure class="highlight pascal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">网址：https:<span class="comment">//releases.ubuntu.com/18.04/</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221147512.png" alt="image-20221122114648347"></p>
+<h2 id="3-制作启动盘"><a href="#3-制作启动盘" class="headerlink" title="3. 制作启动盘"></a>3. 制作启动盘</h2><h3 id="双击打开rufus包–-gt"><a href="#双击打开rufus包–-gt" class="headerlink" title="双击打开rufus包–&gt;"></a>双击打开rufus包–&gt;</h3><h3 id="会自动识别u盘–-gt"><a href="#会自动识别u盘–-gt" class="headerlink" title="会自动识别u盘–&gt;"></a>会自动识别u盘–&gt;</h3><h3 id="引导类型选择刚才下的iso镜像文件–-gt"><a href="#引导类型选择刚才下的iso镜像文件–-gt" class="headerlink" title="引导类型选择刚才下的iso镜像文件–&gt;"></a>引导类型选择刚才下的iso镜像文件–&gt;</h3><h3 id="分区类型选择GPT–-gt"><a href="#分区类型选择GPT–-gt" class="headerlink" title="分区类型选择GPT–&gt;"></a>分区类型选择GPT–&gt;</h3><h3 id="目标系统类型选择UEFI-非CSM-–-gt"><a href="#目标系统类型选择UEFI-非CSM-–-gt" class="headerlink" title="目标系统类型选择UEFI(非CSM)–&gt;"></a>目标系统类型选择UEFI(非CSM)–&gt;</h3><h3 id="文件系统选FAT–-gt"><a href="#文件系统选FAT–-gt" class="headerlink" title="文件系统选FAT–&gt;"></a>文件系统选FAT–&gt;</h3><h3 id="簇大小默认–-gt"><a href="#簇大小默认–-gt" class="headerlink" title="簇大小默认–&gt;"></a>簇大小默认–&gt;</h3><h3 id="开始–-gt"><a href="#开始–-gt" class="headerlink" title="开始–&gt;"></a>开始–&gt;</h3><h3 id="镜像模式选ISO镜像–-gt"><a href="#镜像模式选ISO镜像–-gt" class="headerlink" title="镜像模式选ISO镜像–&gt;"></a>镜像模式选ISO镜像–&gt;</h3><h3 id="一直确认–-gt"><a href="#一直确认–-gt" class="headerlink" title="一直确认–&gt;"></a>一直确认–&gt;</h3><h3 id="待绿色进度条跑完关闭–-gt"><a href="#待绿色进度条跑完关闭–-gt" class="headerlink" title="待绿色进度条跑完关闭–&gt;"></a>待绿色进度条跑完关闭–&gt;</h3><h3 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h3><p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221148034.png" alt="image-20221122114851998"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221149203.png" alt="image-20221122114900160"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221149486.png" alt="image-20221122114908457"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211221149653.png" alt="image-20221122114914619"></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ubuntu/" rel="tag">Ubuntu</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8F%8C%E7%B3%BB%E7%BB%9F/" rel="tag">双系统</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
+  id="post-software/Rstudio/2022118-R语言使用教程（三）——Rstudio添加镜像源(加快包的下载)"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/10/23/software/Rstudio/2022118-R%E8%AF%AD%E8%A8%80%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%89%EF%BC%89%E2%80%94%E2%80%94Rstudio%E6%B7%BB%E5%8A%A0%E9%95%9C%E5%83%8F%E6%BA%90(%E5%8A%A0%E5%BF%AB%E5%8C%85%E7%9A%84%E4%B8%8B%E8%BD%BD)/"
+    >R语言使用教程（三）——Rstudio添加镜像源(加快包的下载)</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2022/10/23/software/Rstudio/2022118-R%E8%AF%AD%E8%A8%80%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%89%EF%BC%89%E2%80%94%E2%80%94Rstudio%E6%B7%BB%E5%8A%A0%E9%95%9C%E5%83%8F%E6%BA%90(%E5%8A%A0%E5%BF%AB%E5%8C%85%E7%9A%84%E4%B8%8B%E8%BD%BD)/" class="article-date">
+  <time datetime="2022-10-22T16:00:00.000Z" itemprop="datePublished">2022-10-23</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/R%E8%AF%AD%E8%A8%80%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">R语言使用教程</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>[TOC]</p>
+<h1 id="三、Rstudio添加镜像源-加快包的下载"><a href="#三、Rstudio添加镜像源-加快包的下载" class="headerlink" title="三、Rstudio添加镜像源(加快包的下载)"></a>三、Rstudio添加镜像源(加快包的下载)</h1><h2 id="打开rstudio-–-gt-Tools-–-gt-Global-Options-–-gt-Packages-–-gt-add-–-gt-输入"><a href="#打开rstudio-–-gt-Tools-–-gt-Global-Options-–-gt-Packages-–-gt-add-–-gt-输入" class="headerlink" title="打开rstudio –&gt; Tools –&gt; Global Options –&gt;Packages –&gt; add –&gt;输入"></a>打开rstudio –&gt; Tools –&gt; Global Options –&gt;Packages –&gt; add –&gt;输入</h2><figure class="highlight pascal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#<span class="keyword">Name</span></span><br><span class="line">aliyun</span><br><span class="line">#Url</span><br><span class="line">https:<span class="comment">//mirrors.aliyun.com/CRAN/</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="–-gt-Change-–-gt-选择离自己最近的源-–-gt-Apply-–-gt-OK"><a href="#–-gt-Change-–-gt-选择离自己最近的源-–-gt-Apply-–-gt-OK" class="headerlink" title="–&gt; Change –&gt; 选择离自己最近的源 –&gt; Apply –&gt; OK"></a>–&gt; Change –&gt; 选择离自己最近的源 –&gt; Apply –&gt; OK</h2><p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211101714994.png" alt="image-20221110171436953"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211101713622.png" alt="image-20221110171301574"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211101721714.png" alt="image-20221110172125666"></p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>[ref]:<a target="_blank" rel="noopener" href="https://blog.csdn.net/zdx1996/article/details/86630385">https://blog.csdn.net/zdx1996/article/details/86630385</a>	“Rstudio更换默认下载镜像(下载源)教程”</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/R/" rel="tag">R</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Rstudio/" rel="tag">Rstudio</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Software/" rel="tag">Software</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
   id="post-software/Rstudio/2022118-R语言使用教程（二）——Rstudio改文件默认路径"
   class="article article-type-post"
   itemscope
@@ -348,507 +871,13 @@
 </article>
 
     
-    <article
-  id="post-software/Anaconda/2022112-Anaconda使用教程（五）——更换Jupyter文件保存位置"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2022/10/19/software/Anaconda/2022112-Anaconda%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%94%EF%BC%89%E2%80%94%E2%80%94%E6%9B%B4%E6%8D%A2Jupyter%E6%96%87%E4%BB%B6%E4%BF%9D%E5%AD%98%E4%BD%8D%E7%BD%AE/"
-    >Anaconda使用教程（五）——更换Jupyter文件保存位置</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2022/10/19/software/Anaconda/2022112-Anaconda%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%94%EF%BC%89%E2%80%94%E2%80%94%E6%9B%B4%E6%8D%A2Jupyter%E6%96%87%E4%BB%B6%E4%BF%9D%E5%AD%98%E4%BD%8D%E7%BD%AE/" class="article-date">
-  <time datetime="2022-10-18T16:00:00.000Z" itemprop="datePublished">2022-10-19</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Anaconda%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">Anaconda使用教程</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="五、更换Jupyter文件保存位置"><a href="#五、更换Jupyter文件保存位置" class="headerlink" title="五、更换Jupyter文件保存位置"></a>五、更换Jupyter文件保存位置</h1><p>[TOC]</p>
-<p>在欲保存文件的位置新建空文件夹，并重命名；</p>
-<p>放大镜搜索Anaconda Prompt，单击打开；</p>
-<h2 id="1-输入"><a href="#1-输入" class="headerlink" title="1.  输入"></a>1.  输入</h2><figure class="highlight pascal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jupyter notebook --generate-config</span><br></pre></td></tr></table></figure>
-
-<h2 id="–-gt-由该路径找到jupyter-notebook-config-py文件-–-gt-右击记事本打开-–-gt-编辑-查找-c-NotebookApp-notebook-dir-–-gt-删除该行前面-号和空格-–-gt-在该行两个单引号间输入刚新建文件夹的路径-–-gt-保存"><a href="#–-gt-由该路径找到jupyter-notebook-config-py文件-–-gt-右击记事本打开-–-gt-编辑-查找-c-NotebookApp-notebook-dir-–-gt-删除该行前面-号和空格-–-gt-在该行两个单引号间输入刚新建文件夹的路径-–-gt-保存" class="headerlink" title="–&gt; 由该路径找到jupyter_notebook_config.py文件 –&gt; 右击记事本打开 –&gt; 编辑-查找-c.NotebookApp.notebook_dir –&gt; 删除该行前面#号和空格 –&gt; 在该行两个单引号间输入刚新建文件夹的路径 –&gt; 保存"></a>–&gt; 由该路径找到jupyter_notebook_config.py文件 –&gt; 右击记事本打开 –&gt; 编辑-查找-c.NotebookApp.notebook_dir –&gt; 删除该行前面#号和空格 –&gt; 在该行两个单引号间输入刚新建文件夹的路径 –&gt; 保存</h2><p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211101615327.png" alt="image-20221110161532503"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211101615938.png" alt="image-20221110161548897"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211101616096.png" alt="image-20221110161605069"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211101616397.png" alt="image-20221110161618362"></p>
-<h2 id="2-右击jupyter-notebook-–-gt-打开文件所在位置-–-gt-选择jupyter右击-–-gt-点击属性-–-gt-删除目标-T-结尾的”-USERRPROFILE-x2F-“-–-gt-应用并确认"><a href="#2-右击jupyter-notebook-–-gt-打开文件所在位置-–-gt-选择jupyter右击-–-gt-点击属性-–-gt-删除目标-T-结尾的”-USERRPROFILE-x2F-“-–-gt-应用并确认" class="headerlink" title="2.  右击jupyter notebook –&gt; 打开文件所在位置 –&gt; 选择jupyter右击 –&gt; 点击属性 –&gt; 删除目标(T)结尾的”%USERRPROFILE%&#x2F;“ –&gt; 应用并确认"></a>2.  右击jupyter notebook –&gt; 打开文件所在位置 –&gt; 选择jupyter右击 –&gt; 点击属性 –&gt; 删除目标(T)结尾的”%USERRPROFILE%&#x2F;“ –&gt; 应用并确认</h2><p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211101617809.png" alt="image-20221110161733545"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211231301104.png" alt="image-20221123130153058"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211101617340.png" alt="image-20221110161759308"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211101618140.png" alt="image-20221110161808108"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211101618476.png" alt="image-20221110161818457"></p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>[ref]:<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_45947969/article/details/108969924">https://blog.csdn.net/qq_45947969/article/details/108969924</a>	“更改Jupyter保存位置、路径详细步骤”</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Anaconda/" rel="tag">Anaconda</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Software/" rel="tag">Software</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-software/Anaconda/2022119-Anaconda使用教程（四）——搭建虚拟环境"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2022/10/18/software/Anaconda/2022119-Anaconda%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%9B%9B%EF%BC%89%E2%80%94%E2%80%94%E6%90%AD%E5%BB%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/"
-    >Anaconda使用教程（四）——搭建虚拟环境</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2022/10/18/software/Anaconda/2022119-Anaconda%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%9B%9B%EF%BC%89%E2%80%94%E2%80%94%E6%90%AD%E5%BB%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/" class="article-date">
-  <time datetime="2022-10-17T16:00:00.000Z" itemprop="datePublished">2022-10-18</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Anaconda%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">Anaconda使用教程</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="四、搭建虚拟环境"><a href="#四、搭建虚拟环境" class="headerlink" title="四、搭建虚拟环境"></a>四、搭建虚拟环境</h1><p>[TOC]</p>
-<p>放大镜搜索Anaconda Prompt，单击打开</p>
-<h2 id="1-查看已安装环境-表示当前环境"><a href="#1-查看已安装环境-表示当前环境" class="headerlink" title="1.  查看已安装环境, *表示当前环境"></a>1.  查看已安装环境, *表示当前环境</h2><figure class="highlight pascal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda env list</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092336136.png" alt="image-20221109233635099"></p>
-<h2 id="2-创建环境"><a href="#2-创建环境" class="headerlink" title="2.   创建环境"></a>2.   创建环境</h2><h3 id="python版本"><a href="#python版本" class="headerlink" title="[python版本]"></a>[python版本]</h3><figure class="highlight pascal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create -n 自定义环境名 python==版本</span><br></pre></td></tr></table></figure>
-
-<h3 id="r版本"><a href="#r版本" class="headerlink" title="[r版本]"></a>[r版本]</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create -n 自定义环境名 r==版本</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092339709.png" alt="image-20221109233901684"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092339412.png" alt="image-20221109233909389"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092339433.png" alt="image-20221109233917688"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092339867.png" alt="image-20221109233936844"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092339878.png" alt="image-20221109233942845"></p>
-<h2 id="3-激活环境"><a href="#3-激活环境" class="headerlink" title="3.  激活环境"></a>3.  激活环境</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda activate 自定义环境名</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092340311.png" alt="image-20221109234018291"></p>
-<h2 id="4-包的下载-x2F-查看-x2F-更新-x2F-移除"><a href="#4-包的下载-x2F-查看-x2F-更新-x2F-移除" class="headerlink" title="4.  包的下载&#x2F;查看&#x2F;更新&#x2F;移除"></a>4.  包的下载&#x2F;查看&#x2F;更新&#x2F;移除</h2><h3 id="包的下载"><a href="#包的下载" class="headerlink" title="包的下载"></a>包的下载</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mamba install 包名=版本 <span class="comment"># 很快</span></span><br><span class="line">pip install 包名=版本 <span class="comment">#主要用于python</span></span><br><span class="line">conda install 包名 <span class="comment">#较慢，全</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="包的查看"><a href="#包的查看" class="headerlink" title="包的查看"></a>包的查看</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda <span class="built_in">list</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="包的更新"><a href="#包的更新" class="headerlink" title="包的更新"></a>包的更新</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda update 包名</span><br></pre></td></tr></table></figure>
-
-<h3 id="包的移除"><a href="#包的移除" class="headerlink" title="包的移除"></a>包的移除</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda remove 包名</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-退出环境"><a href="#5-退出环境" class="headerlink" title="5.  退出环境"></a>5.  退出环境</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda deactivate</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092344159.png" alt="image-20221109234400139"></p>
-<h2 id="6-移除环境"><a href="#6-移除环境" class="headerlink" title="6.  移除环境"></a>6.  移除环境</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda remove -n 自定义环境名--<span class="built_in">all</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>[ref]:<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/89356758">https://zhuanlan.zhihu.com/p/89356758</a>	“Conda 安装使用详解”</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Anaconda/" rel="tag">Anaconda</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Software/" rel="tag">Software</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-software/Anaconda/2022119-Anaconda使用教程（三）——Conda加速器mamba"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2022/10/17/software/Anaconda/2022119-Anaconda%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%89%EF%BC%89%E2%80%94%E2%80%94Conda%E5%8A%A0%E9%80%9F%E5%99%A8mamba/"
-    >Anaconda使用教程（三）——Conda加速器mamba</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2022/10/17/software/Anaconda/2022119-Anaconda%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%89%EF%BC%89%E2%80%94%E2%80%94Conda%E5%8A%A0%E9%80%9F%E5%99%A8mamba/" class="article-date">
-  <time datetime="2022-10-16T16:00:00.000Z" itemprop="datePublished">2022-10-17</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Anaconda%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">Anaconda使用教程</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="三、Conda加速器mamba"><a href="#三、Conda加速器mamba" class="headerlink" title="三、Conda加速器mamba"></a>三、Conda加速器mamba</h1><p>[TOC]</p>
-<p>放大镜搜索Anaconda Prompt，单击打开</p>
-<h2 id="1-（下载）"><a href="#1-（下载）" class="headerlink" title="1.  （下载）"></a>1.  （下载）</h2><figure class="highlight pascal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install -c conda-forge mamba</span><br></pre></td></tr></table></figure>
-
-<h2 id="回车–-gt-输入y-–-gt-等待约半个小时-–-gt-下载完成。"><a href="#回车–-gt-输入y-–-gt-等待约半个小时-–-gt-下载完成。" class="headerlink" title="回车–&gt; 输入y –&gt; 等待约半个小时 –&gt; 下载完成。"></a>回车–&gt; 输入y –&gt; 等待约半个小时 –&gt; 下载完成。</h2><p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092328914.png" alt="image-20221109232652573"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092329473.png" alt="image-20221109232706403"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092328084.png" alt="image-20221109232716446"></p>
-<h2 id="2-（使用方法）-一般仅在下载包时使用"><a href="#2-（使用方法）-一般仅在下载包时使用" class="headerlink" title="2.   （使用方法）[一般仅在下载包时使用]"></a>2.   （使用方法）[一般仅在下载包时使用]</h2><h3 id="下载包"><a href="#下载包" class="headerlink" title="下载包"></a>下载包</h3><figure class="highlight pascal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mamba install 包名=版本</span><br></pre></td></tr></table></figure>
-
-<h3 id="移除包"><a href="#移除包" class="headerlink" title="移除包"></a>移除包</h3><figure class="highlight pascal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mamba remove 包名</span><br></pre></td></tr></table></figure>
-
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>[ref]:<a target="_blank" rel="noopener" href="https://www.cnblogs.com/jessepeng/p/14711435.html">https://www.cnblogs.com/jessepeng/p/14711435.html</a>	“使用mamba加快conda安装软件速度？”</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Anaconda/" rel="tag">Anaconda</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Software/" rel="tag">Software</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-software/Anaconda/2022119-Anaconda使用教程（二）——镜像源配置"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2022/10/16/software/Anaconda/2022119-Anaconda%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E9%95%9C%E5%83%8F%E6%BA%90%E9%85%8D%E7%BD%AE/"
-    >Anaconda使用教程（二）——镜像源配置</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2022/10/16/software/Anaconda/2022119-Anaconda%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E9%95%9C%E5%83%8F%E6%BA%90%E9%85%8D%E7%BD%AE/" class="article-date">
-  <time datetime="2022-10-15T16:00:00.000Z" itemprop="datePublished">2022-10-16</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Anaconda%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">Anaconda使用教程</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="二、Anaconda镜像源配置（加速下载）"><a href="#二、Anaconda镜像源配置（加速下载）" class="headerlink" title="二、Anaconda镜像源配置（加速下载）"></a>二、Anaconda镜像源配置（加速下载）</h1><p>[TOC]</p>
-<h2 id="1-放大镜搜索Anaconda-Prompt"><a href="#1-放大镜搜索Anaconda-Prompt" class="headerlink" title="1.   放大镜搜索Anaconda Prompt"></a>1.   放大镜搜索Anaconda Prompt</h2><p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092323969.png" alt="image-20221109232153981"></p>
-<h2 id="2-单击打开，输入以下源"><a href="#2-单击打开，输入以下源" class="headerlink" title="2.   单击打开，输入以下源"></a>2.   单击打开，输入以下源</h2><figure class="highlight pascal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">conda config --add channels http:<span class="comment">//mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span></span><br><span class="line">conda config --add channels http:<span class="comment">//mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span></span><br><span class="line">conda config --add channels http:<span class="comment">//mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/</span></span><br><span class="line">conda config --add channels http:<span class="comment">//mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/ </span></span><br><span class="line">conda config --<span class="keyword">set</span> show_channel_urls yes </span><br><span class="line">pip config <span class="keyword">set</span> global.<span class="keyword">index</span>-url https:<span class="comment">//pypi.tuna.tsinghua.edu.cn/simple</span></span><br><span class="line">conda config --show channels</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092323528.png" alt="image-20221109232325499"></p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>[ref]:<a target="_blank" rel="noopener" href="https://blog.csdn.net/anglemanyi/article/details/112647242">https://blog.csdn.net/anglemanyi/article/details/112647242</a>	“Anaconda配置国内镜像源”</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Anaconda/" rel="tag">Anaconda</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Software/" rel="tag">Software</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-software/Anaconda/2022119-Anaconda使用教程（一）——下载、安装及环境配置"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2022/10/15/software/Anaconda/2022119-Anaconda%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"
-    >Anaconda使用教程（一）——下载、安装及环境配置</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2022/10/15/software/Anaconda/2022119-Anaconda%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" class="article-date">
-  <time datetime="2022-10-14T16:00:00.000Z" itemprop="datePublished">2022-10-15</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Anaconda%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">Anaconda使用教程</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="一、Anaconda安装及路径配置"><a href="#一、Anaconda安装及路径配置" class="headerlink" title="一、Anaconda安装及路径配置"></a>一、Anaconda安装及路径配置</h1><p>[TOC]</p>
-<h2 id="1-下载网址"><a href="#1-下载网址" class="headerlink" title="1.   下载网址"></a>1.   下载网址</h2><h3 id="方法1"><a href="#方法1" class="headerlink" title="方法1"></a>方法1</h3><p><a target="_blank" rel="noopener" href="https://www.anaconda.com/products/individual">官网（较慢）</a>（下拉，找到对应版本点击下载）</p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092236502.png" alt="image-20221109223644411"></p>
-<h3 id="方法2"><a href="#方法2" class="headerlink" title="方法2"></a>方法2</h3><p><a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/">清华镜像（较快）</a>（下拉，找到最新匹配版本点击下载）</p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092237963.png" alt="image-20221109223737935"></p>
-<p>$\color{red}{注意}$：关于选择x86_64.exe还是x86.exe版本问题，由电脑配置决定，前者有_64后缀表示64位操作系统，后者无_64后缀表示32位操作系统，具体查看方式如下：</p>
-<p>Step1 找到此电脑，右击。 </p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092303721.png" alt="image-20221109230320678"></p>
-<p>step2 点击属性。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092303624.png" alt="image-20221109230336588"></p>
-<h2 id="2-安装"><a href="#2-安装" class="headerlink" title="2.   安装"></a>2.   安装</h2><h3 id="Step1-双击下载的安装包，点击Next。"><a href="#Step1-双击下载的安装包，点击Next。" class="headerlink" title="Step1 双击下载的安装包，点击Next。"></a>Step1 双击下载的安装包，点击Next。</h3><p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092303857.png" alt="image-20221109230351823"></p>
-<h3 id="Step-2-点击-I-agree。"><a href="#Step-2-点击-I-agree。" class="headerlink" title="Step 2 点击 I agree。"></a>Step 2 点击 I agree。</h3><p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092304265.png" alt="image-20221109230404230"></p>
-<h3 id="Step-3-点击-Just-Me-–-gt-Next。"><a href="#Step-3-点击-Just-Me-–-gt-Next。" class="headerlink" title="Step 3 点击 Just Me –&gt; Next。"></a>Step 3 点击 Just Me –&gt; Next。</h3><p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092304821.png" alt="image-20221109230431785"></p>
-<h3 id="Step-4-（若C盘内存很多，这步可跳过）点击Browser-–-gt-选择存储文件夹（新建新文件夹用于存储）–-gt-Next。"><a href="#Step-4-（若C盘内存很多，这步可跳过）点击Browser-–-gt-选择存储文件夹（新建新文件夹用于存储）–-gt-Next。" class="headerlink" title="Step 4 （若C盘内存很多，这步可跳过）点击Browser –&gt; 选择存储文件夹（新建新文件夹用于存储）–&gt; Next。"></a>Step 4 （若C盘内存很多，这步可跳过）点击Browser –&gt; 选择存储文件夹（新建新文件夹用于存储）–&gt; Next。</h3><p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092304207.png" alt="image-20221109230444174"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092307988.png" alt="image-20221109230750948"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092305576.png" alt="image-20221109230554540"></p>
-<h3 id="Step-5-默认选项-–-gt-Install。"><a href="#Step-5-默认选项-–-gt-Install。" class="headerlink" title="Step 5 默认选项 –&gt; Install。"></a>Step 5 默认选项 –&gt; Install。</h3><p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092306599.png" alt="image-20221109230614561"></p>
-<h3 id="Step-6-等待安装完成-–-gt-Next-–-gt-Next-–-gt-取消默认选择-–-gt-Finish。"><a href="#Step-6-等待安装完成-–-gt-Next-–-gt-Next-–-gt-取消默认选择-–-gt-Finish。" class="headerlink" title="Step 6 等待安装完成 –&gt; Next –&gt; Next –&gt; 取消默认选择 –&gt; Finish。"></a>Step 6 等待安装完成 –&gt; Next –&gt; Next –&gt; 取消默认选择 –&gt; Finish。</h3><p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092306147.png" alt="image-20221109230645117"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092307597.png" alt="image-20221109230705563"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092308054.png" alt="image-20221109230845020"></p>
-<h3 id="Step-7-（路径配置）右击此电脑-–-gt-属性-–-gt-高级系统设置-–-gt-环境变量-–-gt-path-–-gt-新建以下四条路径-–-gt-确定"><a href="#Step-7-（路径配置）右击此电脑-–-gt-属性-–-gt-高级系统设置-–-gt-环境变量-–-gt-path-–-gt-新建以下四条路径-–-gt-确定" class="headerlink" title="Step 7 （路径配置）右击此电脑 –&gt; 属性 –&gt; 高级系统设置 –&gt; 环境变量 –&gt; path –&gt; 新建以下四条路径 –&gt; 确定"></a>Step 7 （路径配置）右击此电脑 –&gt; 属性 –&gt; 高级系统设置 –&gt; 环境变量 –&gt; path –&gt; 新建以下四条路径 –&gt; 确定</h3><figure class="highlight pascal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">D:\<span class="keyword">program</span>\Anaconda3</span><br><span class="line"></span><br><span class="line">D:\<span class="keyword">program</span>\Anaconda3\Scripts</span><br><span class="line"></span><br><span class="line">D:\<span class="keyword">program</span>\Anaconda3\<span class="keyword">Library</span>\bin</span><br><span class="line"></span><br><span class="line">D:\<span class="keyword">program</span>\Anaconda3\<span class="keyword">Library</span>\mingw-w64\bin</span><br></pre></td></tr></table></figure>
-
-
-
-<p>$\color{red}{注意}$：其中D:\program\Anaconda3为Step4中新建存储文件夹路径 </p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092309986.png" alt="image-20221109230953947"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092310597.png" alt="image-20221109231013555"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092310631.png" alt="image-20221109231026591"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092312834.png" alt="image-20221109231251799"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092313577.png" alt="image-20221109231303530"></p>
-<h3 id="Step-8（查看路径配置是否完成）按win-R-–-gt-输入cmd并确定-–-gt-输入python-–-gt-存在warning，激活环境-–-gt-输入python，输出版本-–-gt-exit-退出python编译环境-–-gt-路径配置完成。"><a href="#Step-8（查看路径配置是否完成）按win-R-–-gt-输入cmd并确定-–-gt-输入python-–-gt-存在warning，激活环境-–-gt-输入python，输出版本-–-gt-exit-退出python编译环境-–-gt-路径配置完成。" class="headerlink" title="Step 8（查看路径配置是否完成）按win+R –&gt; 输入cmd并确定 –&gt; 输入python –&gt; 存在warning，激活环境 –&gt; 输入python，输出版本 –&gt; exit()退出python编译环境 –&gt; 路径配置完成。"></a>Step 8（查看路径配置是否完成）按win+R –&gt; 输入cmd并确定 –&gt; 输入python –&gt; 存在warning，激活环境 –&gt; 输入python，输出版本 –&gt; exit()退出python编译环境 –&gt; 路径配置完成。</h3><p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092313672.png" alt="image-20221109231320643"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211101638752.png" alt="image-20221110163846718"></p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>[ref]:<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/146372490">https://zhuanlan.zhihu.com/p/146372490</a>	“手把手教新手安装Anaconda配置开发环境”</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Anaconda/" rel="tag">Anaconda</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Software/" rel="tag">Software</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-introduction"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2022/10/14/introduction/"
-    >前言</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2022/10/14/introduction/" class="article-date">
-  <time datetime="2022-10-13T16:00:00.000Z" itemprop="datePublished">2022-10-14</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%89%8D%E8%A8%80/">前言</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>[TOC]</p>
-<h2 id="自我介绍"><a href="#自我介绍" class="headerlink" title="自我介绍"></a>自我介绍</h2><p>我是一名统计学学硕研二学生，目前有读博的想法，创建博客是为了监督自己学习程序语言，或许我的自学道路会为您提供参考作用。</p>
-<h2 id="大体学习思路"><a href="#大体学习思路" class="headerlink" title="大体学习思路"></a>大体学习思路</h2><ul>
-<li>每周末读两篇论文——写总结</li>
-<li>每天5页考博英语单词《考博英语蓝皮书》——整理单词</li>
-<li>每天六级阅读两篇，听力一篇——整理单词</li>
-<li>每天黑马程序员课程一节——写笔记</li>
-</ul>
-<h2 id="Make-up-with-yourself-and-become-a-better-person"><a href="#Make-up-with-yourself-and-become-a-better-person" class="headerlink" title="Make up with yourself and become a better person"></a>Make up with yourself and become a better person</h2> 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/introduction/" rel="tag">introduction</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-Time-Series/202251-Hamilton时间序列分析3——平稳ARMA过程"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2022/05/01/Time-Series/202251-Hamilton%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E6%9E%903%E2%80%94%E2%80%94%E5%B9%B3%E7%A8%B3ARMA%E8%BF%87%E7%A8%8B/"
-    >Hamilton时间序列分析3——平稳ARMA过程</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2022/05/01/Time-Series/202251-Hamilton%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E6%9E%903%E2%80%94%E2%80%94%E5%B9%B3%E7%A8%B3ARMA%E8%BF%87%E7%A8%8B/" class="article-date">
-  <time datetime="2022-04-30T16:00:00.000Z" itemprop="datePublished">2022-05-01</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Hamilton%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E6%9E%90/">Hamilton时间序列分析</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="一、平稳ARMA过程"><a href="#一、平稳ARMA过程" class="headerlink" title="一、平稳ARMA过程"></a>一、平稳ARMA过程</h1><p>[TOC]</p>
-<h2 id="1-Book：J-D-Hamilton-Time-Series-Analysis"><a href="#1-Book：J-D-Hamilton-Time-Series-Analysis" class="headerlink" title="1. Book：J.D. Hamilton, Time Series Analysis"></a>1. Book：J.D. Hamilton, Time Series Analysis</h2><h2 id="2-平稳性与遍历性定义"><a href="#2-平稳性与遍历性定义" class="headerlink" title="2. 平稳性与遍历性定义"></a>2. 平稳性与遍历性定义</h2><h3 id="1‘-平稳性"><a href="#1‘-平稳性" class="headerlink" title="1‘ 平稳性"></a>1‘ 平稳性</h3><p>平稳性用于刻画时间序列的统计性质关于时间平移的不变性，保证许多统计量的渐进分布。</p>
-<p>研究出发点是希望通过时间序列的历史数据，得到其未来的一些预测，即希望该时间序列在历史数据上的性质，在将来保持不变，这样的预测具有实际意义。</p>
-<p>平稳性依照定义分为严平稳(也成为强平稳)和弱平稳(也称作协方差平稳或宽平稳)：</p>
-<p>严平稳表示一个过程$\lbrace Y_t \rbrace$的任意 $j$ 期联合概率密度$f(Y_{t-j},\dots,Y_{t})$(即所有统计性质)仅与 $j$ 的取值有关，与时间t无关；</p>
-<p>弱平稳表示一个过程$\lbrace Y_t \rbrace$的均值 $\mu_{t}$ 和 $t$ 阶自协方差 $\gamma_{jt}$ 都仅与间隔$j$有关，与时间 $t$ 无关: 即$E(Y_t)&#x3D;\mu$, $E(Y_t-\mu)(Y_{t-j}-\mu)&#x3D;\gamma_j$；</p>
-<p>${\color{red}两者区别}$：</p>
-<p>严平稳序列一阶和二阶矩不一定有限，若一个严平稳过程存在有限一二阶矩，则该过程一定是弱平稳过程。</p>
-<p>若一个过程 $\lbrace Y_t \rbrace$ 的联合分布是多元高斯分布，则该过程既是严平稳过程也是弱平稳过程，称为$\color{red}高斯平稳过程$。</p>
-<p>$\color{red}注意：下文所说的平稳过程若无特殊说明都表示弱平稳过程。$</p>
-<h3 id="2’-遍历性"><a href="#2’-遍历性" class="headerlink" title="2’ 遍历性"></a>2’ 遍历性</h3><p>遍历性对于时间序列的意义类似于大数定律对于一般随机变量的意义。用于保证使用样本均值&#x2F;样本自协方差来估计总体均值&#x2F;总体自协方差的可行性。</p>
-<p>对于平稳过程$\lbrace Y_t \rbrace$，若其自协方差 $\gamma_j$ 随着 $j$ 的增大，足够快地趋于0，则称该过程是遍历过程，即所有阶矩都具有遍历性。</p>
-<p>特别地，若一个过程是${\color{red}高斯平稳过程}$，只要满足自协方差求和有限，即$\sum_{j&#x3D;0}^{\infty}|\gamma_j|&lt;\infty$，该过程所有阶矩都满足遍历性。</p>
-<h2 id="2-几个常见过程"><a href="#2-几个常见过程" class="headerlink" title="2. 几个常见过程"></a>2. 几个常见过程</h2><h3 id="1‘-白噪声过程"><a href="#1‘-白噪声过程" class="headerlink" title="1‘ 白噪声过程"></a>1‘ 白噪声过程</h3><p>一个过程 $\lbrace\varepsilon_t\rbrace$ 满足 $(i)E(\varepsilon_t)&#x3D;0, (ii)E(\varepsilon_t^2)&#x3D;\sigma^2, (iii)E(\varepsilon_t\varepsilon_s)&#x3D;0,$ for any $t \ne s$ ，称为白噪声过程。若不同时间独立，即上述$(ii)$改为$E(\varepsilon_t\varepsilon_s)&#x3D;E(\varepsilon_t)(\varepsilon_s)$， 该过程称为独立白噪声过程。若在独立白噪声基础上添加条件$(iv)\varepsilon_t \sim N(0,\sigma^2)$，该过程称为高斯白噪声过程。</p>
-<h3 id="2’-移动平均过程"><a href="#2’-移动平均过程" class="headerlink" title="2’ 移动平均过程"></a>2’ 移动平均过程</h3><p>$\pmb{一阶移动平均过程MA(1)}$：$Y_t&#x3D;\mu + \varepsilon_t+\theta\varepsilon_{t-1}$，其中 $\mu,\theta$ 为常数，$\lbrace\varepsilon_t \rbrace$ 是白噪声过程。满足期望$E(Y_t)&#x3D;\mu$，方差$\gamma_0&#x3D;E(Y_t-\mu)^2&#x3D;(1+\theta^2)\sigma^2$，一阶自协方差$\gamma_1&#x3D;E(Y_t-\mu)(Y_{t-1}-\mu)&#x3D;\theta\sigma^2$，高阶自协方差$\gamma_j&#x3D;0$, for $j &gt;1$。由于均值和协方差都与时间无关，该过程是宽平稳过程。</p>
-<p>$\pmb{q阶移动平均过程MA(q)}$ ：$Y_t&#x3D;\mu + \sum_{j&#x3D;0}^{q}\theta_j\varepsilon_{t-j}$，其中$\mu,\theta_j$为常数，$\theta_0&#x3D;1$。</p>
-<p>$\pmb{无限阶移动平均过程MA(\infty)}$：$Y_t&#x3D;\mu + \sum_{j&#x3D;0}^{\infty}\theta_j\varepsilon_{t-j}$。</p>
-<h3 id="3‘-自回归过程"><a href="#3‘-自回归过程" class="headerlink" title="3‘ 自回归过程"></a>3‘ 自回归过程</h3><p>$\pmb{一阶自回归过程AR(1)}$：$Y_t&#x3D;c + \phi Y_{t-1}+\varepsilon_t$，其中$\lbrace\varepsilon_t \rbrace$ 是白噪声过程</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%B9%B3%E7%A8%B3%E6%80%A7/" rel="tag">平稳性</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E6%9E%90/" rel="tag">时间序列分析</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
   </article>
   
 
   
   <nav class="page-nav">
     
-    <a class="extend prev" rel="prev" href="/page/2/">上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/">下一页</a>
+    <a class="extend prev" rel="prev" href="/page/2/">上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/4/">下一页</a>
   </nav>
   
 </section>
