@@ -26,7 +26,7 @@
 <h2 id="1-Book：J-D-Hamilton-Time-Series-Analysis"><a href="#1-Book：J-D-Hamilton-Time-Series-Analysis" class="headerlink" title="1. Book：J.D. Hamilton, Time Series Analysis"></a>1. Book：J.D. Hamilton, Time Series Analysis</h2><h2 id="2-平稳性与遍历性定义"><a href="#2-平稳性与遍历性定义" class="headerlink" title="2. 平稳性与遍历性定义"></a>2. 平稳性与遍历性定义</h2><h3 id="1‘-平稳性"><a href="#1‘-平稳性" class="headerlink" title="1‘ 平稳性"></a>1‘ 平稳性</h3><p>平稳性用于刻画时间序列的统计性质关于时间平移的不变性，保证许多统计量的渐进分布。</p>
 <p>研究出发点是希望通过时间序列的历史数据，得到其未来的一些预测，即希望该时间序列在历史数据上的性质，在将来保持不变，这样的预测具有实际意义。</p>
 <p>平稳性依照定义分为严平稳(也成为强平稳)和弱平稳(也称作协方差平稳或宽平稳)：</p>
-<p>严平稳表示一个过程$\lbrace Y_t \rbrace$的任意 $j$ 期联合概率密度$f(Y_{t-j},\dots,Y_{t})$(即所有统计性质)仅与 $j$ 的取值有关，与时间t无关；</p>
+<p>严平稳表示一个过程$\lbrace Y_t \rbrace$的任意 $j$ 期联合概率密度$f(Y_{t-j},\dots,Y_{t})$(即所有统计性质)仅与 $j$ 的取值有关，与时间 $t$ 无关；</p>
 <p>弱平稳表示一个过程$\lbrace Y_t \rbrace$的均值 $\mu_{t}$ 和 $t$ 阶自协方差 $\gamma_{jt}$ 都仅与间隔$j$有关，与时间 $t$ 无关: 即$E(Y_t)&#x3D;\mu$, $E(Y_t-\mu)(Y_{t-j}-\mu)&#x3D;\gamma_j$；</p>
 <p>${\color{red}两者区别}$：</p>
 <p>严平稳序列一阶和二阶矩不一定有限，若一个严平稳过程存在有限一二阶矩，则该过程一定是弱平稳过程。</p>
@@ -35,7 +35,7 @@
 <h3 id="2’-遍历性"><a href="#2’-遍历性" class="headerlink" title="2’ 遍历性"></a>2’ 遍历性</h3><p>遍历性对于时间序列的意义类似于大数定律对于一般随机变量的意义。用于保证使用样本均值&#x2F;样本自协方差来估计总体均值&#x2F;总体自协方差的可行性。</p>
 <p>对于平稳过程$\lbrace Y_t \rbrace$，若其自协方差 $\gamma_j$ 随着 $j$ 的增大，足够快地趋于0，则称该过程是遍历过程，即所有阶矩都具有遍历性。</p>
 <p>特别地，若一个过程是${\color{red}高斯平稳过程}$，只要满足自协方差求和有限，即$\sum_{j&#x3D;0}^{\infty}|\gamma_j|&lt;\infty$，该过程所有阶矩都满足遍历性。</p>
-<h2 id="2-几个常见过程"><a href="#2-几个常见过程" class="headerlink" title="2. 几个常见过程"></a>2. 几个常见过程</h2><h3 id="1‘-白噪声过程"><a href="#1‘-白噪声过程" class="headerlink" title="1‘ 白噪声过程"></a>1‘ 白噪声过程</h3><p>一个过程 $\lbrace\varepsilon_t\rbrace$ 满足 $(i)E(\varepsilon_t)&#x3D;0, (ii)E(\varepsilon_t^2)&#x3D;\sigma^2, (iii)E(\varepsilon_t\varepsilon_s)&#x3D;0,$ for any $t \ne s$ ，称为白噪声过程。若不同时间独立，即上述$(ii)$改为$E(\varepsilon_t\varepsilon_s)&#x3D;E(\varepsilon_t)(\varepsilon_s)$， 该过程称为独立白噪声过程。若在独立白噪声基础上添加条件$(iv)\varepsilon_t \sim N(0,\sigma^2)$，该过程称为高斯白噪声过程。</p>
+<h2 id="2-几个常见过程"><a href="#2-几个常见过程" class="headerlink" title="2. 几个常见过程"></a>2. 几个常见过程</h2><h3 id="1‘-白噪声过程"><a href="#1‘-白噪声过程" class="headerlink" title="1‘ 白噪声过程"></a>1‘ 白噪声过程</h3><p>一个过程 $\lbrace\varepsilon_t\rbrace$ 满足 $(i)E(\varepsilon_t)&#x3D;0, (ii)E(\varepsilon_t^2)&#x3D;\sigma^2, (iii)E(\varepsilon_t\varepsilon_s)&#x3D;0,$ for any $t \ne s$ ，称为白噪声过程。若不同时间独立，即上述$(ii)$改为$E(\varepsilon_t\varepsilon_s)&#x3D;E(\varepsilon_t)E(\varepsilon_s)$， 该过程称为独立白噪声过程。若在独立白噪声基础上添加条件$(iv)\varepsilon_t \sim N(0,\sigma^2)$，该过程称为高斯白噪声过程。</p>
 <h3 id="2’-移动平均过程"><a href="#2’-移动平均过程" class="headerlink" title="2’ 移动平均过程"></a>2’ 移动平均过程</h3><p>$\pmb{一阶移动平均过程MA(1)}$：$Y_t&#x3D;\mu + \varepsilon_t+\theta\varepsilon_{t-1}$，其中 $\mu,\theta$ 为常数，$\lbrace\varepsilon_t \rbrace$ 是白噪声过程。满足期望$E(Y_t)&#x3D;\mu$，方差$\gamma_0&#x3D;E(Y_t-\mu)^2&#x3D;(1+\theta^2)\sigma^2$，一阶自协方差$\gamma_1&#x3D;E(Y_t-\mu)(Y_{t-1}-\mu)&#x3D;\theta\sigma^2$，高阶自协方差$\gamma_j&#x3D;0$, for $j &gt;1$。由于均值和协方差都与时间无关，该过程是宽平稳过程。</p>
 <p>$\pmb{q阶移动平均过程MA(q)}$ ：$Y_t&#x3D;\mu + \sum_{j&#x3D;0}^{q}\theta_j\varepsilon_{t-j}$，其中$\mu,\theta_j$为常数，$\theta_0&#x3D;1$。</p>
 <p>$\pmb{无限阶移动平均过程MA(\infty)}$：$Y_t&#x3D;\mu + \sum_{j&#x3D;0}^{\infty}\theta_j\varepsilon_{t-j}$。</p>
@@ -1164,7 +1164,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Anaconda使用教程（五）——更换Jupyter文件保存位置</title>
+    <title>Anaconda下载安装（五）——更换Jupyter文件保存位置</title>
     <url>/2022/10/19/software/Anaconda/2022112-Anaconda%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%94%EF%BC%89%E2%80%94%E2%80%94%E6%9B%B4%E6%8D%A2Jupyter%E6%96%87%E4%BB%B6%E4%BF%9D%E5%AD%98%E4%BD%8D%E7%BD%AE/</url>
     <content><![CDATA[<h1 id="五、更换Jupyter文件保存位置"><a href="#五、更换Jupyter文件保存位置" class="headerlink" title="五、更换Jupyter文件保存位置"></a>五、更换Jupyter文件保存位置</h1><p>[TOC]</p>
 <p>在欲保存文件的位置新建空文件夹，并重命名；</p>
@@ -1183,7 +1183,7 @@
 <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>[ref]:<a href="https://blog.csdn.net/qq_45947969/article/details/108969924">https://blog.csdn.net/qq_45947969/article/details/108969924</a>	“更改Jupyter保存位置、路径详细步骤”</p>
 ]]></content>
       <categories>
-        <category>Anaconda使用教程</category>
+        <category>Anaconda下载安装</category>
       </categories>
       <tags>
         <tag>Software</tag>
@@ -1191,7 +1191,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Anaconda使用教程（六）——Jupyter换核（不同python环境）</title>
+    <title>Anaconda下载安装（六）——Jupyter换核（不同python环境）</title>
     <url>/2022/10/20/software/Anaconda/2022112-Anaconda%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%85%AD%EF%BC%89%E2%80%94%E2%80%94Jupyter%E6%8D%A2%E6%A0%B8/</url>
     <content><![CDATA[<h1 id="六、Jupyter换核（不同python环境）"><a href="#六、Jupyter换核（不同python环境）" class="headerlink" title="六、Jupyter换核（不同python环境）"></a>六、Jupyter换核（不同python环境）</h1><p>[TOC]</p>
 <p>Anaconda的base环境自带一个对应python版本的Jupyter核，但实际应用中，对于不同版本python，部分包可能存在不兼容的情况，可以通过构建多个虚拟环境分别下载不同版本python（构建虚拟环境请移步”Anaconda使用教程（四）——搭建虚拟环境”，下文是基于已有虚拟环境的操作)，并将其加载Jupyter后换核解决。</p>
@@ -1211,7 +1211,7 @@
 <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>[ref]:<a href="https://zhuanlan.zhihu.com/p/409063952">https://zhuanlan.zhihu.com/p/409063952</a>	“Jupyter notebook中添加虚拟环境”</p>
 ]]></content>
       <categories>
-        <category>Anaconda使用教程</category>
+        <category>Anaconda下载安装</category>
       </categories>
       <tags>
         <tag>Software</tag>
@@ -1219,7 +1219,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Anaconda使用教程（一）——下载、安装及环境配置</title>
+    <title>Anaconda下载安装（一）——下载、安装及环境配置</title>
     <url>/2022/10/15/software/Anaconda/2022119-Anaconda%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<h1 id="一、Anaconda安装及路径配置"><a href="#一、Anaconda安装及路径配置" class="headerlink" title="一、Anaconda安装及路径配置"></a>一、Anaconda安装及路径配置</h1><p>[TOC]</p>
 <h2 id="1-下载网址"><a href="#1-下载网址" class="headerlink" title="1.   下载网址"></a>1.   下载网址</h2><h3 id="方法1"><a href="#方法1" class="headerlink" title="方法1"></a>方法1</h3><p><a href="https://www.anaconda.com/products/individual">官网（较慢）</a>（下拉，找到对应版本点击下载）</p>
@@ -1256,7 +1256,7 @@
 <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>[ref]:<a href="https://zhuanlan.zhihu.com/p/146372490">https://zhuanlan.zhihu.com/p/146372490</a>	“手把手教新手安装Anaconda配置开发环境”</p>
 ]]></content>
       <categories>
-        <category>Anaconda使用教程</category>
+        <category>Anaconda下载安装</category>
       </categories>
       <tags>
         <tag>Software</tag>
@@ -1264,7 +1264,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Anaconda使用教程（三）——Conda加速器mamba</title>
+    <title>Anaconda下载安装（三）——Conda加速器mamba</title>
     <url>/2022/10/17/software/Anaconda/2022119-Anaconda%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%89%EF%BC%89%E2%80%94%E2%80%94Conda%E5%8A%A0%E9%80%9F%E5%99%A8mamba/</url>
     <content><![CDATA[<h1 id="三、Conda加速器mamba"><a href="#三、Conda加速器mamba" class="headerlink" title="三、Conda加速器mamba"></a>三、Conda加速器mamba</h1><p>[TOC]</p>
 <p>放大镜搜索Anaconda Prompt，单击打开</p>
@@ -1280,7 +1280,7 @@
 <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>[ref]:<a href="https://www.cnblogs.com/jessepeng/p/14711435.html">https://www.cnblogs.com/jessepeng/p/14711435.html</a>	“使用mamba加快conda安装软件速度？”</p>
 ]]></content>
       <categories>
-        <category>Anaconda使用教程</category>
+        <category>Anaconda下载安装</category>
       </categories>
       <tags>
         <tag>Software</tag>
@@ -1288,7 +1288,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Anaconda使用教程（二）——镜像源配置</title>
+    <title>Anaconda下载安装（二）——镜像源配置</title>
     <url>/2022/10/16/software/Anaconda/2022119-Anaconda%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E9%95%9C%E5%83%8F%E6%BA%90%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<h1 id="二、Anaconda镜像源配置（加速下载）"><a href="#二、Anaconda镜像源配置（加速下载）" class="headerlink" title="二、Anaconda镜像源配置（加速下载）"></a>二、Anaconda镜像源配置（加速下载）</h1><p>[TOC]</p>
 <h2 id="1-放大镜搜索Anaconda-Prompt"><a href="#1-放大镜搜索Anaconda-Prompt" class="headerlink" title="1.   放大镜搜索Anaconda Prompt"></a>1.   放大镜搜索Anaconda Prompt</h2><p><img src="https://cdn.jsdelivr.net/gh/linglingge2000/myblog@main/2022/11/202211092323969.png" alt="image-20221109232153981"></p>
@@ -1298,7 +1298,7 @@
 <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>[ref]:<a href="https://blog.csdn.net/anglemanyi/article/details/112647242">https://blog.csdn.net/anglemanyi/article/details/112647242</a>	“Anaconda配置国内镜像源”</p>
 ]]></content>
       <categories>
-        <category>Anaconda使用教程</category>
+        <category>Anaconda下载安装</category>
       </categories>
       <tags>
         <tag>Software</tag>
@@ -1306,7 +1306,7 @@
       </tags>
   </entry>
   <entry>
-    <title>R语言使用教程（一）——R和Rstudio安装</title>
+    <title>R语言下载安装（一）——R和Rstudio安装</title>
     <url>/2022/10/21/software/Rstudio/2022116-R%E8%AF%AD%E8%A8%80%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94R%E5%92%8CRstudio%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<p>[TOC]</p>
 <h1 id="一、R和Rstudio安装"><a href="#一、R和Rstudio安装" class="headerlink" title="一、R和Rstudio安装"></a>一、R和Rstudio安装</h1><h2 id="1-r的下载及安装"><a href="#1-r的下载及安装" class="headerlink" title="1.  r的下载及安装"></a>1.  r的下载及安装</h2><p><a href="https://mirrors.sjtug.sjtu.edu.cn/cran/">镜像下载网址</a></p>
@@ -1315,7 +1315,7 @@
 <p>改存储路径，一直默认安装即可</p>
 ]]></content>
       <categories>
-        <category>R语言使用教程</category>
+        <category>R语言下载安装</category>
       </categories>
       <tags>
         <tag>Software</tag>
@@ -1324,7 +1324,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Anaconda使用教程（四）——搭建虚拟环境</title>
+    <title>Anaconda下载安装（四）——搭建虚拟环境</title>
     <url>/2022/10/18/software/Anaconda/2022119-Anaconda%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%9B%9B%EF%BC%89%E2%80%94%E2%80%94%E6%90%AD%E5%BB%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</url>
     <content><![CDATA[<h1 id="四、搭建虚拟环境"><a href="#四、搭建虚拟环境" class="headerlink" title="四、搭建虚拟环境"></a>四、搭建虚拟环境</h1><p>[TOC]</p>
 <p>放大镜搜索Anaconda Prompt，单击打开</p>
@@ -1359,7 +1359,7 @@
 <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>[ref]:<a href="https://zhuanlan.zhihu.com/p/89356758">https://zhuanlan.zhihu.com/p/89356758</a>	“Conda 安装使用详解”</p>
 ]]></content>
       <categories>
-        <category>Anaconda使用教程</category>
+        <category>Anaconda下载安装</category>
       </categories>
       <tags>
         <tag>Software</tag>
@@ -1367,7 +1367,7 @@
       </tags>
   </entry>
   <entry>
-    <title>R语言使用教程（三）——Rstudio添加镜像源(加快包的下载)</title>
+    <title>R语言下载安装（三）——Rstudio添加镜像源(加快包的下载)</title>
     <url>/2022/10/23/software/Rstudio/2022118-R%E8%AF%AD%E8%A8%80%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%89%EF%BC%89%E2%80%94%E2%80%94Rstudio%E6%B7%BB%E5%8A%A0%E9%95%9C%E5%83%8F%E6%BA%90(%E5%8A%A0%E5%BF%AB%E5%8C%85%E7%9A%84%E4%B8%8B%E8%BD%BD)/</url>
     <content><![CDATA[<p>[TOC]</p>
 <h1 id="三、Rstudio添加镜像源-加快包的下载"><a href="#三、Rstudio添加镜像源-加快包的下载" class="headerlink" title="三、Rstudio添加镜像源(加快包的下载)"></a>三、Rstudio添加镜像源(加快包的下载)</h1><h2 id="打开rstudio-–-gt-Tools-–-gt-Global-Options-–-gt-Packages-–-gt-add-–-gt-输入"><a href="#打开rstudio-–-gt-Tools-–-gt-Global-Options-–-gt-Packages-–-gt-add-–-gt-输入" class="headerlink" title="打开rstudio –&gt; Tools –&gt; Global Options –&gt;Packages –&gt; add –&gt;输入"></a>打开rstudio –&gt; Tools –&gt; Global Options –&gt;Packages –&gt; add –&gt;输入</h2><figure class="highlight pascal"><table><tr><td class="code"><pre><span class="line">#<span class="keyword">Name</span></span><br><span class="line">aliyun</span><br><span class="line">#Url</span><br><span class="line">https:<span class="comment">//mirrors.aliyun.com/CRAN/</span></span><br></pre></td></tr></table></figure>
@@ -1378,7 +1378,7 @@
 <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>[ref]:<a href="https://blog.csdn.net/zdx1996/article/details/86630385">https://blog.csdn.net/zdx1996/article/details/86630385</a>	“Rstudio更换默认下载镜像(下载源)教程”</p>
 ]]></content>
       <categories>
-        <category>R语言使用教程</category>
+        <category>R语言下载安装</category>
       </categories>
       <tags>
         <tag>Software</tag>
@@ -1387,7 +1387,7 @@
       </tags>
   </entry>
   <entry>
-    <title>R语言使用教程（二）——Rstudio改文件默认路径</title>
+    <title>R语言下载安装（二）——Rstudio改文件默认路径</title>
     <url>/2022/10/22/software/Rstudio/2022118-R%E8%AF%AD%E8%A8%80%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94Rstudio%E6%94%B9%E6%96%87%E4%BB%B6%E9%BB%98%E8%AE%A4%E8%B7%AF%E5%BE%84/</url>
     <content><![CDATA[<p>[TOC]</p>
 <p>在欲保存的位置新建文件夹并重命名；</p>
@@ -1396,7 +1396,7 @@
 <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>[ref]:<a href="https://zhuanlan.zhihu.com/p/146355865">https://zhuanlan.zhihu.com/p/146355865</a>	“Rstudio中修改工作路径的三种方法”</p>
 ]]></content>
       <categories>
-        <category>R语言使用教程</category>
+        <category>R语言下载安装</category>
       </categories>
       <tags>
         <tag>Software</tag>
@@ -1521,6 +1521,25 @@
       <tags>
         <tag>geogebra</tag>
         <tag>抛物线</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>白仲林面板数据计量经济学1——面板数据介绍</title>
+    <url>/2022/06/01/panel-data/202261-%E7%99%BD%E4%BB%B2%E6%9E%97%E9%9D%A2%E6%9D%BF%E6%95%B0%E6%8D%AE%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A61%E2%80%94%E2%80%94%E9%9D%A2%E6%9D%BF%E6%95%B0%E6%8D%AE%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<h1 id="一、面板数据介绍"><a href="#一、面板数据介绍" class="headerlink" title="一、面板数据介绍"></a>一、面板数据介绍</h1><p>[TOC]</p>
+<h2 id="1-定义"><a href="#1-定义" class="headerlink" title="1. 定义"></a>1. 定义</h2><p>面板数据(Panel data)是指多个个体在多个时间节点同时观测构成的二维数据集合。面板数据是$\pmb{\color{red}对截面数据静态性和时间序列数据同质性}$的推广，不仅能揭示个体差异性的动态行为，还可以发现个体动态性的差异性。</p>
+<h2 id="2-分类"><a href="#2-分类" class="headerlink" title="2. 分类"></a>2. 分类</h2><h3 id="1-完整面板数据-x2F-平衡面板数据"><a href="#1-完整面板数据-x2F-平衡面板数据" class="headerlink" title="(1) 完整面板数据&#x2F;平衡面板数据"></a>(1) 完整面板数据&#x2F;平衡面板数据</h3><p>每个个体i都有相同多个时间节点的截面数据，即对于N个个体，每个个体都有T期截面观测，不存在数据缺失。</p>
+<h3 id="2-非平衡面板数据"><a href="#2-非平衡面板数据" class="headerlink" title="(2) 非平衡面板数据"></a>(2) 非平衡面板数据</h3><p>每个个体i可能存在不同多个时间节点的截面数据。如：研究企业CEO的收入影响因素，出现企业兼并或倒闭，丢失部分年份数据。</p>
+<h3 id="3-空间面板数据"><a href="#3-空间面板数据" class="headerlink" title="(3) 空间面板数据"></a>(3) 空间面板数据</h3><p>面板数据可能存在空间自相关性和空间结构(空间异质性)。如：研究企业CEO的收入影响因素，该收入可能受市场CEO收入的影响，即各CEO收入间可能存在相关关系。</p>
+<h3 id="4-轮换面板数据"><a href="#4-轮换面板数据" class="headerlink" title="(4) 轮换面板数据"></a>(4) 轮换面板数据</h3><p>对于不同时间的观测，被测个体可能存在差异。如：研究企业CEO的收入影响因素，出现CEO换届，继续对下一任CEO进行调查，得到观测。这会使得数据存在轮换组偏倚效应，很难与其他效应区分开。</p>
+<h3 id="5-伪面板数据"><a href="#5-伪面板数据" class="headerlink" title="(5) 伪面板数据"></a>(5) 伪面板数据</h3><p>按某些特征将总体划分成多个群，取每个群的均值(中位数或分位数)作为观测，构造出以群为个体的人工面板数据。如：研究企业CEO的收入影响因素，将企业按类型分为制造业、服务业等多个群组，在每个群组内调查取平均，得到以群组为个体的截面数据，再按时间多次取样，得到伪面板数据。</p>
+]]></content>
+      <categories>
+        <category>白仲林面板数据计量经济学</category>
+      </categories>
+      <tags>
+        <tag>面板数据计量经济学</tag>
+        <tag>面板数据介绍</tag>
       </tags>
   </entry>
 </search>

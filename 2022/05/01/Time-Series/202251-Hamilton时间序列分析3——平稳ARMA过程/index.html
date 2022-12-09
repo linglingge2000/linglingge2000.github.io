@@ -91,7 +91,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">891</span>
+            <span class="post-count">892</span>
         </span>
     </span>
 
@@ -119,7 +119,7 @@
 <h2 id="1-Book：J-D-Hamilton-Time-Series-Analysis"><a href="#1-Book：J-D-Hamilton-Time-Series-Analysis" class="headerlink" title="1. Book：J.D. Hamilton, Time Series Analysis"></a>1. Book：J.D. Hamilton, Time Series Analysis</h2><h2 id="2-平稳性与遍历性定义"><a href="#2-平稳性与遍历性定义" class="headerlink" title="2. 平稳性与遍历性定义"></a>2. 平稳性与遍历性定义</h2><h3 id="1‘-平稳性"><a href="#1‘-平稳性" class="headerlink" title="1‘ 平稳性"></a>1‘ 平稳性</h3><p>平稳性用于刻画时间序列的统计性质关于时间平移的不变性，保证许多统计量的渐进分布。</p>
 <p>研究出发点是希望通过时间序列的历史数据，得到其未来的一些预测，即希望该时间序列在历史数据上的性质，在将来保持不变，这样的预测具有实际意义。</p>
 <p>平稳性依照定义分为严平稳(也成为强平稳)和弱平稳(也称作协方差平稳或宽平稳)：</p>
-<p>严平稳表示一个过程$\lbrace Y_t \rbrace$的任意 $j$ 期联合概率密度$f(Y_{t-j},\dots,Y_{t})$(即所有统计性质)仅与 $j$ 的取值有关，与时间t无关；</p>
+<p>严平稳表示一个过程$\lbrace Y_t \rbrace$的任意 $j$ 期联合概率密度$f(Y_{t-j},\dots,Y_{t})$(即所有统计性质)仅与 $j$ 的取值有关，与时间 $t$ 无关；</p>
 <p>弱平稳表示一个过程$\lbrace Y_t \rbrace$的均值 $\mu_{t}$ 和 $t$ 阶自协方差 $\gamma_{jt}$ 都仅与间隔$j$有关，与时间 $t$ 无关: 即$E(Y_t)&#x3D;\mu$, $E(Y_t-\mu)(Y_{t-j}-\mu)&#x3D;\gamma_j$；</p>
 <p>${\color{red}两者区别}$：</p>
 <p>严平稳序列一阶和二阶矩不一定有限，若一个严平稳过程存在有限一二阶矩，则该过程一定是弱平稳过程。</p>
@@ -128,7 +128,7 @@
 <h3 id="2’-遍历性"><a href="#2’-遍历性" class="headerlink" title="2’ 遍历性"></a>2’ 遍历性</h3><p>遍历性对于时间序列的意义类似于大数定律对于一般随机变量的意义。用于保证使用样本均值&#x2F;样本自协方差来估计总体均值&#x2F;总体自协方差的可行性。</p>
 <p>对于平稳过程$\lbrace Y_t \rbrace$，若其自协方差 $\gamma_j$ 随着 $j$ 的增大，足够快地趋于0，则称该过程是遍历过程，即所有阶矩都具有遍历性。</p>
 <p>特别地，若一个过程是${\color{red}高斯平稳过程}$，只要满足自协方差求和有限，即$\sum_{j&#x3D;0}^{\infty}|\gamma_j|&lt;\infty$，该过程所有阶矩都满足遍历性。</p>
-<h2 id="2-几个常见过程"><a href="#2-几个常见过程" class="headerlink" title="2. 几个常见过程"></a>2. 几个常见过程</h2><h3 id="1‘-白噪声过程"><a href="#1‘-白噪声过程" class="headerlink" title="1‘ 白噪声过程"></a>1‘ 白噪声过程</h3><p>一个过程 $\lbrace\varepsilon_t\rbrace$ 满足 $(i)E(\varepsilon_t)&#x3D;0, (ii)E(\varepsilon_t^2)&#x3D;\sigma^2, (iii)E(\varepsilon_t\varepsilon_s)&#x3D;0,$ for any $t \ne s$ ，称为白噪声过程。若不同时间独立，即上述$(ii)$改为$E(\varepsilon_t\varepsilon_s)&#x3D;E(\varepsilon_t)(\varepsilon_s)$， 该过程称为独立白噪声过程。若在独立白噪声基础上添加条件$(iv)\varepsilon_t \sim N(0,\sigma^2)$，该过程称为高斯白噪声过程。</p>
+<h2 id="2-几个常见过程"><a href="#2-几个常见过程" class="headerlink" title="2. 几个常见过程"></a>2. 几个常见过程</h2><h3 id="1‘-白噪声过程"><a href="#1‘-白噪声过程" class="headerlink" title="1‘ 白噪声过程"></a>1‘ 白噪声过程</h3><p>一个过程 $\lbrace\varepsilon_t\rbrace$ 满足 $(i)E(\varepsilon_t)&#x3D;0, (ii)E(\varepsilon_t^2)&#x3D;\sigma^2, (iii)E(\varepsilon_t\varepsilon_s)&#x3D;0,$ for any $t \ne s$ ，称为白噪声过程。若不同时间独立，即上述$(ii)$改为$E(\varepsilon_t\varepsilon_s)&#x3D;E(\varepsilon_t)E(\varepsilon_s)$， 该过程称为独立白噪声过程。若在独立白噪声基础上添加条件$(iv)\varepsilon_t \sim N(0,\sigma^2)$，该过程称为高斯白噪声过程。</p>
 <h3 id="2’-移动平均过程"><a href="#2’-移动平均过程" class="headerlink" title="2’ 移动平均过程"></a>2’ 移动平均过程</h3><p>$\pmb{一阶移动平均过程MA(1)}$：$Y_t&#x3D;\mu + \varepsilon_t+\theta\varepsilon_{t-1}$，其中 $\mu,\theta$ 为常数，$\lbrace\varepsilon_t \rbrace$ 是白噪声过程。满足期望$E(Y_t)&#x3D;\mu$，方差$\gamma_0&#x3D;E(Y_t-\mu)^2&#x3D;(1+\theta^2)\sigma^2$，一阶自协方差$\gamma_1&#x3D;E(Y_t-\mu)(Y_{t-1}-\mu)&#x3D;\theta\sigma^2$，高阶自协方差$\gamma_j&#x3D;0$, for $j &gt;1$。由于均值和协方差都与时间无关，该过程是宽平稳过程。</p>
 <p>$\pmb{q阶移动平均过程MA(q)}$ ：$Y_t&#x3D;\mu + \sum_{j&#x3D;0}^{q}\theta_j\varepsilon_{t-j}$，其中$\mu,\theta_j$为常数，$\theta_0&#x3D;1$。</p>
 <p>$\pmb{无限阶移动平均过程MA(\infty)}$：$Y_t&#x3D;\mu + \sum_{j&#x3D;0}^{\infty}\theta_j\varepsilon_{t-j}$。</p>
@@ -210,11 +210,11 @@
    
   <nav class="article-nav">
     
-      <a href="/2022/10/14/introduction/" class="article-nav-link">
+      <a href="/2022/06/01/panel-data/202261-%E7%99%BD%E4%BB%B2%E6%9E%97%E9%9D%A2%E6%9D%BF%E6%95%B0%E6%8D%AE%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A61%E2%80%94%E2%80%94%E9%9D%A2%E6%9D%BF%E6%95%B0%E6%8D%AE%E4%BB%8B%E7%BB%8D/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            前言
+            白仲林面板数据计量经济学1——面板数据介绍
           
         </div>
       </a>

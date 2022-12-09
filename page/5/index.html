@@ -164,6 +164,74 @@
     
     
     <article
+  id="post-Python/Python练习实例/202217-Python菜鸟教程——Python练习实例8"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2022/01/08/Python/Python%E7%BB%83%E4%B9%A0%E5%AE%9E%E4%BE%8B/202217-Python%E8%8F%9C%E9%B8%9F%E6%95%99%E7%A8%8B%E2%80%94%E2%80%94Python%E7%BB%83%E4%B9%A0%E5%AE%9E%E4%BE%8B8/"
+    >Python菜鸟教程——Python练习实例8</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2022/01/08/Python/Python%E7%BB%83%E4%B9%A0%E5%AE%9E%E4%BE%8B/202217-Python%E8%8F%9C%E9%B8%9F%E6%95%99%E7%A8%8B%E2%80%94%E2%80%94Python%E7%BB%83%E4%B9%A0%E5%AE%9E%E4%BE%8B8/" class="article-date">
+  <time datetime="2022-01-07T16:00:00.000Z" itemprop="datePublished">2022-01-08</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Python%E7%BB%83%E4%B9%A0%E5%AE%9E%E4%BE%8B/">Python练习实例</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="Python练习实例8"><a href="#Python练习实例8" class="headerlink" title="Python练习实例8"></a>Python练习实例8</h1><h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><figure class="highlight pascal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">输出<span class="number">9</span>*<span class="number">9</span>乘法口诀表</span><br></pre></td></tr></table></figure>
+
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><figure class="highlight pascal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">遍历<span class="number">1</span>-<span class="number">9</span>，更改print默认输出换行，使用换行符\n，使得输出呈下三角形式</span><br></pre></td></tr></table></figure>
+
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight pascal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">10</span>):</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">1</span>,i+<span class="number">1</span>):</span><br><span class="line">        print(&quot;%d * %d = %d&quot;%(j,i,j*i),<span class="keyword">end</span> = &quot;   &quot;)</span><br><span class="line">    print(&quot;\n&quot;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><p>1 * 1 &#x3D; 1   </p>
+<p>1 * 2 &#x3D; 2   2 * 2 &#x3D; 4   </p>
+<p>1 * 3 &#x3D; 3   2 * 3 &#x3D; 6   3 * 3 &#x3D; 9   </p>
+<p>1 * 4 &#x3D; 4   2 * 4 &#x3D; 8   3 * 4 &#x3D; 12   4 * 4 &#x3D; 16   </p>
+<p>1 * 5 &#x3D; 5   2 * 5 &#x3D; 10   3 * 5 &#x3D; 15   4 * 5 &#x3D; 20   5 * 5 &#x3D; 25   </p>
+<p>1 * 6 &#x3D; 6   2 * 6 &#x3D; 12   3 * 6 &#x3D; 18   4 * 6 &#x3D; 24   5 * 6 &#x3D; 30   6 * 6 &#x3D; 36  </p>
+<p>1 * 7 &#x3D; 7   2 * 7 &#x3D; 14   3 * 7 &#x3D; 21   4 * 7 &#x3D; 28   5 * 7 &#x3D; 35   6 * 7 &#x3D; 42   7 * 7 &#x3D; 49   </p>
+<p>1 * 8 &#x3D; 8   2 * 8 &#x3D; 16   3 * 8 &#x3D; 24   4 * 8 &#x3D; 32   5 * 8 &#x3D; 40   6 * 8 &#x3D; 48   7 * 8 &#x3D; 56   8 * 8 &#x3D; 64   </p>
+<p>1 * 9 &#x3D; 9   2 * 9 &#x3D; 18   3 * 9 &#x3D; 27   4 * 9 &#x3D; 36   5 * 9 &#x3D; 45   6 * 9 &#x3D; 54   7 * 9 &#x3D; 63   8 * 9 &#x3D; 72   9 * 9 &#x3D; 81 </p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BB%83%E4%B9%A0%E5%AE%9E%E4%BE%8B/" rel="tag">练习实例</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
   id="post-Python/Python练习实例/20221111-Python菜鸟教程——Python练习实例7"
   class="article article-type-post"
   itemscope
